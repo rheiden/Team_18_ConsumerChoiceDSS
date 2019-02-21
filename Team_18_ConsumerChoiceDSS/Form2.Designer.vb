@@ -201,9 +201,9 @@ Partial Class lblRCHDevelopers
         '
         Me.PictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(538, 354)
+        Me.PictureBox4.Location = New System.Drawing.Point(534, 354)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(144, 111)
+        Me.PictureBox4.Size = New System.Drawing.Size(153, 111)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox4.TabIndex = 11
         Me.PictureBox4.TabStop = False
