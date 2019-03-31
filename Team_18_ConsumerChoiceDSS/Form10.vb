@@ -1,3 +1,3 @@
-﻿Public Class Form10
+﻿Public Class frmTeam18CarInfoHelp
 
 End Class

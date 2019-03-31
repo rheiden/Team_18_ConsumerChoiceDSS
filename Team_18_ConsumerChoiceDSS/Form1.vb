@@ -1,3 +1,3 @@
-﻿Public Class frmRCHWelcome
+﻿Public Class frmTeam18Welcome
 
 End Class

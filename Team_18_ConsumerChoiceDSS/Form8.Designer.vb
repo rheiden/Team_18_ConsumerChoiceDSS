@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form8
+Partial Class frmTeam18LoginHelp
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,59 +22,63 @@ Partial Class Form8
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblTeam18LoginHelp1 = New System.Windows.Forms.Label()
+        Me.lblTeam18LoginHelp2 = New System.Windows.Forms.Label()
+        Me.lblTeam18LoginHelpTitle = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'Label1
+        'lblTeam18LoginHelp1
         '
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(114, 198)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(892, 48)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "1. Please enter your username and password."
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblTeam18LoginHelp1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTeam18LoginHelp1.Location = New System.Drawing.Point(57, 103)
+        Me.lblTeam18LoginHelp1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblTeam18LoginHelp1.Name = "lblTeam18LoginHelp1"
+        Me.lblTeam18LoginHelp1.Size = New System.Drawing.Size(446, 25)
+        Me.lblTeam18LoginHelp1.TabIndex = 0
+        Me.lblTeam18LoginHelp1.Text = "1. Please enter your username and password."
+        Me.lblTeam18LoginHelp1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label2
+        'lblTeam18LoginHelp2
         '
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(114, 274)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(892, 129)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "2. If you have not created a username and password, please click on the ""Create N" &
+        Me.lblTeam18LoginHelp2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTeam18LoginHelp2.Location = New System.Drawing.Point(57, 142)
+        Me.lblTeam18LoginHelp2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblTeam18LoginHelp2.Name = "lblTeam18LoginHelp2"
+        Me.lblTeam18LoginHelp2.Size = New System.Drawing.Size(446, 67)
+        Me.lblTeam18LoginHelp2.TabIndex = 1
+        Me.lblTeam18LoginHelp2.Text = "2. If you have not created a username and password, please click on the ""Create N" &
     "ew Account"" button and you will be redirected to the ""Create Account"" page." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblTeam18LoginHelp2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label3
+        'lblTeam18LoginHelpTitle
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(447, 103)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(254, 55)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Login Help"
+        Me.lblTeam18LoginHelpTitle.AutoSize = True
+        Me.lblTeam18LoginHelpTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTeam18LoginHelpTitle.Location = New System.Drawing.Point(224, 54)
+        Me.lblTeam18LoginHelpTitle.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblTeam18LoginHelpTitle.Name = "lblTeam18LoginHelpTitle"
+        Me.lblTeam18LoginHelpTitle.Size = New System.Drawing.Size(130, 29)
+        Me.lblTeam18LoginHelpTitle.TabIndex = 2
+        Me.lblTeam18LoginHelpTitle.Text = "Login Help"
         '
-        'Form8
+        'frmTeam18LoginHelp
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(1146, 537)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Name = "Form8"
+        Me.ClientSize = New System.Drawing.Size(573, 279)
+        Me.Controls.Add(Me.lblTeam18LoginHelpTitle)
+        Me.Controls.Add(Me.lblTeam18LoginHelp2)
+        Me.Controls.Add(Me.lblTeam18LoginHelp1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Name = "frmTeam18LoginHelp"
         Me.Text = "Login Help"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
+    Friend WithEvents lblTeam18LoginHelp1 As Label
+    Friend WithEvents lblTeam18LoginHelp2 As Label
+    Friend WithEvents lblTeam18LoginHelpTitle As Label
 End Class

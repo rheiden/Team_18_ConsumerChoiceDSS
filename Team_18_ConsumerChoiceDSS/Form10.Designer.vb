@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form10
+Partial Class frmTeam18CarInfoHelp
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,71 +22,76 @@ Partial Class Form10
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblTeam18CarInfoHelp = New System.Windows.Forms.Label()
+        Me.lblTeam18Help1 = New System.Windows.Forms.Label()
+        Me.lblTeam18Help2 = New System.Windows.Forms.Label()
+        Me.lblTeam18Help3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'Label1
+        'lblTeam18CarInfoHelp
         '
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(275, 82)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(481, 69)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Car Information Help"
+        Me.lblTeam18CarInfoHelp.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTeam18CarInfoHelp.Location = New System.Drawing.Point(138, 43)
+        Me.lblTeam18CarInfoHelp.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblTeam18CarInfoHelp.Name = "lblTeam18CarInfoHelp"
+        Me.lblTeam18CarInfoHelp.Size = New System.Drawing.Size(240, 36)
+        Me.lblTeam18CarInfoHelp.TabIndex = 0
+        Me.lblTeam18CarInfoHelp.Text = "Car Information Help"
         '
-        'Label2
+        'lblTeam18Help1
         '
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(134, 167)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(739, 111)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "1. Please enter a budget you are willing to spend on a car."
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblTeam18Help1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTeam18Help1.Location = New System.Drawing.Point(67, 87)
+        Me.lblTeam18Help1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblTeam18Help1.Name = "lblTeam18Help1"
+        Me.lblTeam18Help1.Size = New System.Drawing.Size(370, 58)
+        Me.lblTeam18Help1.TabIndex = 1
+        Me.lblTeam18Help1.Text = "1. Please enter a budget you are willing to spend on a car."
+        Me.lblTeam18Help1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label3
+        'lblTeam18Help2
         '
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(134, 302)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(739, 126)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "2. Please select the rest of of the required information in the table below" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " and" &
+        Me.lblTeam18Help2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTeam18Help2.Location = New System.Drawing.Point(67, 157)
+        Me.lblTeam18Help2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblTeam18Help2.Name = "lblTeam18Help2"
+        Me.lblTeam18Help2.Size = New System.Drawing.Size(370, 66)
+        Me.lblTeam18Help2.TabIndex = 2
+        Me.lblTeam18Help2.Text = "2. Please select the rest of of the required information in the table below" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " and" &
     " click ""Confirm""." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblTeam18Help2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label4
+        'lblTeam18Help3
         '
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(134, 457)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(739, 86)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "3. Once you have clicked ""Confirm"", you will be redirected to the ""Results"" page." &
+        Me.lblTeam18Help3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTeam18Help3.Location = New System.Drawing.Point(67, 238)
+        Me.lblTeam18Help3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblTeam18Help3.Name = "lblTeam18Help3"
+        Me.lblTeam18Help3.Size = New System.Drawing.Size(370, 45)
+        Me.lblTeam18Help3.TabIndex = 3
+        Me.lblTeam18Help3.Text = "3. Once you have clicked ""Confirm"", you will be redirected to the ""Results"" page." &
     "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblTeam18Help3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Form10
+        'frmTeam18CarInfoHelp
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(1041, 599)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Name = "Form10"
+        Me.ClientSize = New System.Drawing.Size(520, 311)
+        Me.Controls.Add(Me.lblTeam18Help3)
+        Me.Controls.Add(Me.lblTeam18Help2)
+        Me.Controls.Add(Me.lblTeam18Help1)
+        Me.Controls.Add(Me.lblTeam18CarInfoHelp)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Name = "frmTeam18CarInfoHelp"
         Me.Text = "Form10"
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
+    Friend WithEvents lblTeam18CarInfoHelp As Label
+    Friend WithEvents lblTeam18Help1 As Label
+    Friend WithEvents lblTeam18Help2 As Label
+    Friend WithEvents lblTeam18Help3 As Label
 End Class

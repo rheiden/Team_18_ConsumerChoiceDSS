@@ -1,3 +1,3 @@
-﻿Public Class frmRCHNewUser
+﻿Public Class frmTeam18NewUser
 
 End Class

@@ -22,73 +22,73 @@ Partial Class frmRCHResults
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.gbxRCHCar = New System.Windows.Forms.GroupBox()
-        Me.tblRCHCarInfo = New System.Windows.Forms.TableLayoutPanel()
-        Me.rbxRCHModel = New System.Windows.Forms.RichTextBox()
+        Me.gbxTeam18Car = New System.Windows.Forms.GroupBox()
+        Me.tblTeam18CarInfo = New System.Windows.Forms.TableLayoutPanel()
+        Me.rbxTeam18Model = New System.Windows.Forms.RichTextBox()
         Me.lblRCHModel = New System.Windows.Forms.Label()
-        Me.lblRCHMake = New System.Windows.Forms.Label()
-        Me.rbxRCHMake = New System.Windows.Forms.RichTextBox()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
-        Me.lblRCHCost = New System.Windows.Forms.Label()
-        Me.grpRCHSpecs = New System.Windows.Forms.GroupBox()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.rtxRCHBodyType = New System.Windows.Forms.RichTextBox()
-        Me.rtxRCHFuelEfficiency = New System.Windows.Forms.RichTextBox()
-        Me.rtxRCHEngine = New System.Windows.Forms.RichTextBox()
-        Me.rtxRCHTransmission = New System.Windows.Forms.RichTextBox()
-        Me.rtxRCHCarType = New System.Windows.Forms.RichTextBox()
-        Me.lblRCHBodyType = New System.Windows.Forms.Label()
-        Me.lblRCHCarType = New System.Windows.Forms.Label()
-        Me.lblRCHTransmission = New System.Windows.Forms.Label()
-        Me.lblRCHFuelEfficiency = New System.Windows.Forms.Label()
-        Me.lblRCHEngine = New System.Windows.Forms.Label()
-        Me.btnRCHGoBackResults = New System.Windows.Forms.Button()
-        Me.btnRCHAccept = New System.Windows.Forms.Button()
-        Me.gbxRCHCar.SuspendLayout()
-        Me.tblRCHCarInfo.SuspendLayout()
-        Me.grpRCHSpecs.SuspendLayout()
-        Me.TableLayoutPanel1.SuspendLayout()
+        Me.lblTeam18Make = New System.Windows.Forms.Label()
+        Me.rbxTeam18Make = New System.Windows.Forms.RichTextBox()
+        Me.rbxTeam18Cost = New System.Windows.Forms.RichTextBox()
+        Me.lblTeam18Cost = New System.Windows.Forms.Label()
+        Me.grpTeam18Specs = New System.Windows.Forms.GroupBox()
+        Me.tblTeam18CarSpecs = New System.Windows.Forms.TableLayoutPanel()
+        Me.rtxTeam18BodyType = New System.Windows.Forms.RichTextBox()
+        Me.rtxTeam18FuelEfficiency = New System.Windows.Forms.RichTextBox()
+        Me.rtxTeam18Engine = New System.Windows.Forms.RichTextBox()
+        Me.rtxTeam18Transmission = New System.Windows.Forms.RichTextBox()
+        Me.rtxTeam18CarType = New System.Windows.Forms.RichTextBox()
+        Me.lblTeam18BodyType = New System.Windows.Forms.Label()
+        Me.lblTeam18CarType = New System.Windows.Forms.Label()
+        Me.lblTeam18Transmission = New System.Windows.Forms.Label()
+        Me.lblTeam18FuelEfficiency = New System.Windows.Forms.Label()
+        Me.lblTeam18Engine = New System.Windows.Forms.Label()
+        Me.btnTeam18GoBackResults = New System.Windows.Forms.Button()
+        Me.btnTeam18Accept = New System.Windows.Forms.Button()
+        Me.gbxTeam18Car.SuspendLayout()
+        Me.tblTeam18CarInfo.SuspendLayout()
+        Me.grpTeam18Specs.SuspendLayout()
+        Me.tblTeam18CarSpecs.SuspendLayout()
         Me.SuspendLayout()
         '
-        'gbxRCHCar
+        'gbxTeam18Car
         '
-        Me.gbxRCHCar.Controls.Add(Me.tblRCHCarInfo)
-        Me.gbxRCHCar.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gbxRCHCar.Location = New System.Drawing.Point(22, 45)
-        Me.gbxRCHCar.Name = "gbxRCHCar"
-        Me.gbxRCHCar.Size = New System.Drawing.Size(301, 130)
-        Me.gbxRCHCar.TabIndex = 0
-        Me.gbxRCHCar.TabStop = False
-        Me.gbxRCHCar.Text = "Car Information"
+        Me.gbxTeam18Car.Controls.Add(Me.tblTeam18CarInfo)
+        Me.gbxTeam18Car.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gbxTeam18Car.Location = New System.Drawing.Point(22, 45)
+        Me.gbxTeam18Car.Name = "gbxTeam18Car"
+        Me.gbxTeam18Car.Size = New System.Drawing.Size(301, 130)
+        Me.gbxTeam18Car.TabIndex = 0
+        Me.gbxTeam18Car.TabStop = False
+        Me.gbxTeam18Car.Text = "Car Information"
         '
-        'tblRCHCarInfo
+        'tblTeam18CarInfo
         '
-        Me.tblRCHCarInfo.ColumnCount = 2
-        Me.tblRCHCarInfo.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.tblRCHCarInfo.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.tblRCHCarInfo.Controls.Add(Me.rbxRCHModel, 1, 1)
-        Me.tblRCHCarInfo.Controls.Add(Me.lblRCHModel, 0, 1)
-        Me.tblRCHCarInfo.Controls.Add(Me.lblRCHMake, 0, 0)
-        Me.tblRCHCarInfo.Controls.Add(Me.rbxRCHMake, 1, 0)
-        Me.tblRCHCarInfo.Controls.Add(Me.RichTextBox1, 1, 2)
-        Me.tblRCHCarInfo.Controls.Add(Me.lblRCHCost, 0, 2)
-        Me.tblRCHCarInfo.Location = New System.Drawing.Point(16, 17)
-        Me.tblRCHCarInfo.Name = "tblRCHCarInfo"
-        Me.tblRCHCarInfo.RowCount = 3
-        Me.tblRCHCarInfo.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334!))
-        Me.tblRCHCarInfo.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334!))
-        Me.tblRCHCarInfo.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334!))
-        Me.tblRCHCarInfo.Size = New System.Drawing.Size(271, 97)
-        Me.tblRCHCarInfo.TabIndex = 0
+        Me.tblTeam18CarInfo.ColumnCount = 2
+        Me.tblTeam18CarInfo.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.tblTeam18CarInfo.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.tblTeam18CarInfo.Controls.Add(Me.rbxTeam18Model, 1, 1)
+        Me.tblTeam18CarInfo.Controls.Add(Me.lblRCHModel, 0, 1)
+        Me.tblTeam18CarInfo.Controls.Add(Me.lblTeam18Make, 0, 0)
+        Me.tblTeam18CarInfo.Controls.Add(Me.rbxTeam18Make, 1, 0)
+        Me.tblTeam18CarInfo.Controls.Add(Me.rbxTeam18Cost, 1, 2)
+        Me.tblTeam18CarInfo.Controls.Add(Me.lblTeam18Cost, 0, 2)
+        Me.tblTeam18CarInfo.Location = New System.Drawing.Point(16, 17)
+        Me.tblTeam18CarInfo.Name = "tblTeam18CarInfo"
+        Me.tblTeam18CarInfo.RowCount = 3
+        Me.tblTeam18CarInfo.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334!))
+        Me.tblTeam18CarInfo.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334!))
+        Me.tblTeam18CarInfo.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334!))
+        Me.tblTeam18CarInfo.Size = New System.Drawing.Size(271, 97)
+        Me.tblTeam18CarInfo.TabIndex = 0
         '
-        'rbxRCHModel
+        'rbxTeam18Model
         '
-        Me.rbxRCHModel.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.rbxRCHModel.Location = New System.Drawing.Point(138, 37)
-        Me.rbxRCHModel.Name = "rbxRCHModel"
-        Me.rbxRCHModel.Size = New System.Drawing.Size(130, 21)
-        Me.rbxRCHModel.TabIndex = 3
-        Me.rbxRCHModel.Text = ""
+        Me.rbxTeam18Model.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.rbxTeam18Model.Location = New System.Drawing.Point(138, 37)
+        Me.rbxTeam18Model.Name = "rbxTeam18Model"
+        Me.rbxTeam18Model.Size = New System.Drawing.Size(130, 21)
+        Me.rbxTeam18Model.TabIndex = 3
+        Me.rbxTeam18Model.Text = ""
         '
         'lblRCHModel
         '
@@ -100,197 +100,197 @@ Partial Class frmRCHResults
         Me.lblRCHModel.TabIndex = 1
         Me.lblRCHModel.Text = "Model: "
         '
-        'lblRCHMake
+        'lblTeam18Make
         '
-        Me.lblRCHMake.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.lblRCHMake.AutoSize = True
-        Me.lblRCHMake.Location = New System.Drawing.Point(88, 8)
-        Me.lblRCHMake.Name = "lblRCHMake"
-        Me.lblRCHMake.Size = New System.Drawing.Size(44, 15)
-        Me.lblRCHMake.TabIndex = 0
-        Me.lblRCHMake.Text = "Make: "
+        Me.lblTeam18Make.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.lblTeam18Make.AutoSize = True
+        Me.lblTeam18Make.Location = New System.Drawing.Point(88, 8)
+        Me.lblTeam18Make.Name = "lblTeam18Make"
+        Me.lblTeam18Make.Size = New System.Drawing.Size(44, 15)
+        Me.lblTeam18Make.TabIndex = 0
+        Me.lblTeam18Make.Text = "Make: "
         '
-        'rbxRCHMake
+        'rbxTeam18Make
         '
-        Me.rbxRCHMake.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.rbxRCHMake.Location = New System.Drawing.Point(138, 5)
-        Me.rbxRCHMake.Name = "rbxRCHMake"
-        Me.rbxRCHMake.Size = New System.Drawing.Size(130, 21)
-        Me.rbxRCHMake.TabIndex = 2
-        Me.rbxRCHMake.Text = ""
+        Me.rbxTeam18Make.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.rbxTeam18Make.Location = New System.Drawing.Point(138, 5)
+        Me.rbxTeam18Make.Name = "rbxTeam18Make"
+        Me.rbxTeam18Make.Size = New System.Drawing.Size(130, 21)
+        Me.rbxTeam18Make.TabIndex = 2
+        Me.rbxTeam18Make.Text = ""
         '
-        'RichTextBox1
+        'rbxTeam18Cost
         '
-        Me.RichTextBox1.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.RichTextBox1.Location = New System.Drawing.Point(138, 70)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(130, 21)
-        Me.RichTextBox1.TabIndex = 5
-        Me.RichTextBox1.Text = ""
+        Me.rbxTeam18Cost.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.rbxTeam18Cost.Location = New System.Drawing.Point(138, 70)
+        Me.rbxTeam18Cost.Name = "rbxTeam18Cost"
+        Me.rbxTeam18Cost.Size = New System.Drawing.Size(130, 21)
+        Me.rbxTeam18Cost.TabIndex = 5
+        Me.rbxTeam18Cost.Text = ""
         '
-        'lblRCHCost
+        'lblTeam18Cost
         '
-        Me.lblRCHCost.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.lblRCHCost.AutoSize = True
-        Me.lblRCHCost.Location = New System.Drawing.Point(97, 73)
-        Me.lblRCHCost.Name = "lblRCHCost"
-        Me.lblRCHCost.Size = New System.Drawing.Size(35, 15)
-        Me.lblRCHCost.TabIndex = 4
-        Me.lblRCHCost.Text = "Cost:"
+        Me.lblTeam18Cost.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.lblTeam18Cost.AutoSize = True
+        Me.lblTeam18Cost.Location = New System.Drawing.Point(97, 73)
+        Me.lblTeam18Cost.Name = "lblTeam18Cost"
+        Me.lblTeam18Cost.Size = New System.Drawing.Size(35, 15)
+        Me.lblTeam18Cost.TabIndex = 4
+        Me.lblTeam18Cost.Text = "Cost:"
         '
-        'grpRCHSpecs
+        'grpTeam18Specs
         '
-        Me.grpRCHSpecs.Controls.Add(Me.TableLayoutPanel1)
-        Me.grpRCHSpecs.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.grpRCHSpecs.Location = New System.Drawing.Point(22, 181)
-        Me.grpRCHSpecs.Name = "grpRCHSpecs"
-        Me.grpRCHSpecs.Size = New System.Drawing.Size(287, 201)
-        Me.grpRCHSpecs.TabIndex = 1
-        Me.grpRCHSpecs.TabStop = False
-        Me.grpRCHSpecs.Text = "Car Specs"
+        Me.grpTeam18Specs.Controls.Add(Me.tblTeam18CarSpecs)
+        Me.grpTeam18Specs.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.grpTeam18Specs.Location = New System.Drawing.Point(22, 181)
+        Me.grpTeam18Specs.Name = "grpTeam18Specs"
+        Me.grpTeam18Specs.Size = New System.Drawing.Size(287, 201)
+        Me.grpTeam18Specs.TabIndex = 1
+        Me.grpTeam18Specs.TabStop = False
+        Me.grpTeam18Specs.Text = "Car Specs"
         '
-        'TableLayoutPanel1
+        'tblTeam18CarSpecs
         '
-        Me.TableLayoutPanel1.ColumnCount = 2
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.rtxRCHBodyType, 1, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.rtxRCHFuelEfficiency, 1, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.rtxRCHEngine, 1, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.rtxRCHTransmission, 1, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.rtxRCHCarType, 1, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.lblRCHBodyType, 0, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.lblRCHCarType, 0, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.lblRCHTransmission, 0, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.lblRCHFuelEfficiency, 0, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.lblRCHEngine, 0, 2)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(16, 22)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 5
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(256, 173)
-        Me.TableLayoutPanel1.TabIndex = 0
+        Me.tblTeam18CarSpecs.ColumnCount = 2
+        Me.tblTeam18CarSpecs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.tblTeam18CarSpecs.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.tblTeam18CarSpecs.Controls.Add(Me.rtxTeam18BodyType, 1, 4)
+        Me.tblTeam18CarSpecs.Controls.Add(Me.rtxTeam18FuelEfficiency, 1, 3)
+        Me.tblTeam18CarSpecs.Controls.Add(Me.rtxTeam18Engine, 1, 2)
+        Me.tblTeam18CarSpecs.Controls.Add(Me.rtxTeam18Transmission, 1, 1)
+        Me.tblTeam18CarSpecs.Controls.Add(Me.rtxTeam18CarType, 1, 0)
+        Me.tblTeam18CarSpecs.Controls.Add(Me.lblTeam18BodyType, 0, 4)
+        Me.tblTeam18CarSpecs.Controls.Add(Me.lblTeam18CarType, 0, 0)
+        Me.tblTeam18CarSpecs.Controls.Add(Me.lblTeam18Transmission, 0, 1)
+        Me.tblTeam18CarSpecs.Controls.Add(Me.lblTeam18FuelEfficiency, 0, 3)
+        Me.tblTeam18CarSpecs.Controls.Add(Me.lblTeam18Engine, 0, 2)
+        Me.tblTeam18CarSpecs.Location = New System.Drawing.Point(16, 22)
+        Me.tblTeam18CarSpecs.Name = "tblTeam18CarSpecs"
+        Me.tblTeam18CarSpecs.RowCount = 5
+        Me.tblTeam18CarSpecs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.tblTeam18CarSpecs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.tblTeam18CarSpecs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.tblTeam18CarSpecs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.tblTeam18CarSpecs.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.tblTeam18CarSpecs.Size = New System.Drawing.Size(256, 173)
+        Me.tblTeam18CarSpecs.TabIndex = 0
         '
-        'rtxRCHBodyType
+        'rtxTeam18BodyType
         '
-        Me.rtxRCHBodyType.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.rtxRCHBodyType.Location = New System.Drawing.Point(131, 144)
-        Me.rtxRCHBodyType.Name = "rtxRCHBodyType"
-        Me.rtxRCHBodyType.Size = New System.Drawing.Size(117, 20)
-        Me.rtxRCHBodyType.TabIndex = 12
-        Me.rtxRCHBodyType.Text = ""
+        Me.rtxTeam18BodyType.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.rtxTeam18BodyType.Location = New System.Drawing.Point(131, 144)
+        Me.rtxTeam18BodyType.Name = "rtxTeam18BodyType"
+        Me.rtxTeam18BodyType.Size = New System.Drawing.Size(117, 20)
+        Me.rtxTeam18BodyType.TabIndex = 12
+        Me.rtxTeam18BodyType.Text = ""
         '
-        'rtxRCHFuelEfficiency
+        'rtxTeam18FuelEfficiency
         '
-        Me.rtxRCHFuelEfficiency.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.rtxRCHFuelEfficiency.Location = New System.Drawing.Point(131, 109)
-        Me.rtxRCHFuelEfficiency.Name = "rtxRCHFuelEfficiency"
-        Me.rtxRCHFuelEfficiency.Size = New System.Drawing.Size(117, 20)
-        Me.rtxRCHFuelEfficiency.TabIndex = 11
-        Me.rtxRCHFuelEfficiency.Text = ""
+        Me.rtxTeam18FuelEfficiency.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.rtxTeam18FuelEfficiency.Location = New System.Drawing.Point(131, 109)
+        Me.rtxTeam18FuelEfficiency.Name = "rtxTeam18FuelEfficiency"
+        Me.rtxTeam18FuelEfficiency.Size = New System.Drawing.Size(117, 20)
+        Me.rtxTeam18FuelEfficiency.TabIndex = 11
+        Me.rtxTeam18FuelEfficiency.Text = ""
         '
-        'rtxRCHEngine
+        'rtxTeam18Engine
         '
-        Me.rtxRCHEngine.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.rtxRCHEngine.Location = New System.Drawing.Point(131, 75)
-        Me.rtxRCHEngine.Name = "rtxRCHEngine"
-        Me.rtxRCHEngine.Size = New System.Drawing.Size(117, 20)
-        Me.rtxRCHEngine.TabIndex = 10
-        Me.rtxRCHEngine.Text = ""
+        Me.rtxTeam18Engine.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.rtxTeam18Engine.Location = New System.Drawing.Point(131, 75)
+        Me.rtxTeam18Engine.Name = "rtxTeam18Engine"
+        Me.rtxTeam18Engine.Size = New System.Drawing.Size(117, 20)
+        Me.rtxTeam18Engine.TabIndex = 10
+        Me.rtxTeam18Engine.Text = ""
         '
-        'rtxRCHTransmission
+        'rtxTeam18Transmission
         '
-        Me.rtxRCHTransmission.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.rtxRCHTransmission.Location = New System.Drawing.Point(131, 41)
-        Me.rtxRCHTransmission.Name = "rtxRCHTransmission"
-        Me.rtxRCHTransmission.Size = New System.Drawing.Size(117, 20)
-        Me.rtxRCHTransmission.TabIndex = 9
-        Me.rtxRCHTransmission.Text = ""
+        Me.rtxTeam18Transmission.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.rtxTeam18Transmission.Location = New System.Drawing.Point(131, 41)
+        Me.rtxTeam18Transmission.Name = "rtxTeam18Transmission"
+        Me.rtxTeam18Transmission.Size = New System.Drawing.Size(117, 20)
+        Me.rtxTeam18Transmission.TabIndex = 9
+        Me.rtxTeam18Transmission.Text = ""
         '
-        'rtxRCHCarType
+        'rtxTeam18CarType
         '
-        Me.rtxRCHCarType.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.rtxRCHCarType.Location = New System.Drawing.Point(131, 6)
-        Me.rtxRCHCarType.Name = "rtxRCHCarType"
-        Me.rtxRCHCarType.Size = New System.Drawing.Size(117, 21)
-        Me.rtxRCHCarType.TabIndex = 4
-        Me.rtxRCHCarType.Text = ""
+        Me.rtxTeam18CarType.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.rtxTeam18CarType.Location = New System.Drawing.Point(131, 6)
+        Me.rtxTeam18CarType.Name = "rtxTeam18CarType"
+        Me.rtxTeam18CarType.Size = New System.Drawing.Size(117, 21)
+        Me.rtxTeam18CarType.TabIndex = 4
+        Me.rtxTeam18CarType.Text = ""
         '
-        'lblRCHBodyType
+        'lblTeam18BodyType
         '
-        Me.lblRCHBodyType.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.lblRCHBodyType.AutoSize = True
-        Me.lblRCHBodyType.Location = New System.Drawing.Point(55, 147)
-        Me.lblRCHBodyType.Name = "lblRCHBodyType"
-        Me.lblRCHBodyType.Size = New System.Drawing.Size(70, 15)
-        Me.lblRCHBodyType.TabIndex = 8
-        Me.lblRCHBodyType.Text = "Body Type: "
+        Me.lblTeam18BodyType.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.lblTeam18BodyType.AutoSize = True
+        Me.lblTeam18BodyType.Location = New System.Drawing.Point(55, 147)
+        Me.lblTeam18BodyType.Name = "lblTeam18BodyType"
+        Me.lblTeam18BodyType.Size = New System.Drawing.Size(70, 15)
+        Me.lblTeam18BodyType.TabIndex = 8
+        Me.lblTeam18BodyType.Text = "Body Type: "
         '
-        'lblRCHCarType
+        'lblTeam18CarType
         '
-        Me.lblRCHCarType.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.lblRCHCarType.AutoSize = True
-        Me.lblRCHCarType.Location = New System.Drawing.Point(64, 9)
-        Me.lblRCHCarType.Name = "lblRCHCarType"
-        Me.lblRCHCarType.Size = New System.Drawing.Size(61, 15)
-        Me.lblRCHCarType.TabIndex = 4
-        Me.lblRCHCarType.Text = "Car Type: "
+        Me.lblTeam18CarType.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.lblTeam18CarType.AutoSize = True
+        Me.lblTeam18CarType.Location = New System.Drawing.Point(64, 9)
+        Me.lblTeam18CarType.Name = "lblTeam18CarType"
+        Me.lblTeam18CarType.Size = New System.Drawing.Size(61, 15)
+        Me.lblTeam18CarType.TabIndex = 4
+        Me.lblTeam18CarType.Text = "Car Type: "
         '
-        'lblRCHTransmission
+        'lblTeam18Transmission
         '
-        Me.lblRCHTransmission.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.lblRCHTransmission.AutoSize = True
-        Me.lblRCHTransmission.Location = New System.Drawing.Point(42, 43)
-        Me.lblRCHTransmission.Name = "lblRCHTransmission"
-        Me.lblRCHTransmission.Size = New System.Drawing.Size(83, 15)
-        Me.lblRCHTransmission.TabIndex = 6
-        Me.lblRCHTransmission.Text = "Transmission: "
+        Me.lblTeam18Transmission.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.lblTeam18Transmission.AutoSize = True
+        Me.lblTeam18Transmission.Location = New System.Drawing.Point(42, 43)
+        Me.lblTeam18Transmission.Name = "lblTeam18Transmission"
+        Me.lblTeam18Transmission.Size = New System.Drawing.Size(83, 15)
+        Me.lblTeam18Transmission.TabIndex = 6
+        Me.lblTeam18Transmission.Text = "Transmission: "
         '
-        'lblRCHFuelEfficiency
+        'lblTeam18FuelEfficiency
         '
-        Me.lblRCHFuelEfficiency.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.lblRCHFuelEfficiency.AutoSize = True
-        Me.lblRCHFuelEfficiency.Location = New System.Drawing.Point(35, 111)
-        Me.lblRCHFuelEfficiency.Name = "lblRCHFuelEfficiency"
-        Me.lblRCHFuelEfficiency.Size = New System.Drawing.Size(90, 15)
-        Me.lblRCHFuelEfficiency.TabIndex = 7
-        Me.lblRCHFuelEfficiency.Text = "Fuel Efficiency: "
+        Me.lblTeam18FuelEfficiency.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.lblTeam18FuelEfficiency.AutoSize = True
+        Me.lblTeam18FuelEfficiency.Location = New System.Drawing.Point(35, 111)
+        Me.lblTeam18FuelEfficiency.Name = "lblTeam18FuelEfficiency"
+        Me.lblTeam18FuelEfficiency.Size = New System.Drawing.Size(90, 15)
+        Me.lblTeam18FuelEfficiency.TabIndex = 7
+        Me.lblTeam18FuelEfficiency.Text = "Fuel Efficiency: "
         '
-        'lblRCHEngine
+        'lblTeam18Engine
         '
-        Me.lblRCHEngine.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.lblRCHEngine.AutoSize = True
-        Me.lblRCHEngine.Location = New System.Drawing.Point(75, 77)
-        Me.lblRCHEngine.Name = "lblRCHEngine"
-        Me.lblRCHEngine.Size = New System.Drawing.Size(50, 15)
-        Me.lblRCHEngine.TabIndex = 5
-        Me.lblRCHEngine.Text = "Engine: "
+        Me.lblTeam18Engine.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.lblTeam18Engine.AutoSize = True
+        Me.lblTeam18Engine.Location = New System.Drawing.Point(75, 77)
+        Me.lblTeam18Engine.Name = "lblTeam18Engine"
+        Me.lblTeam18Engine.Size = New System.Drawing.Size(50, 15)
+        Me.lblTeam18Engine.TabIndex = 5
+        Me.lblTeam18Engine.Text = "Engine: "
         '
-        'btnRCHGoBackResults
+        'btnTeam18GoBackResults
         '
-        Me.btnRCHGoBackResults.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRCHGoBackResults.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnRCHGoBackResults.Location = New System.Drawing.Point(3, 5)
-        Me.btnRCHGoBackResults.Name = "btnRCHGoBackResults"
-        Me.btnRCHGoBackResults.Size = New System.Drawing.Size(87, 34)
-        Me.btnRCHGoBackResults.TabIndex = 9
-        Me.btnRCHGoBackResults.Text = "<--- Go Back"
-        Me.btnRCHGoBackResults.UseVisualStyleBackColor = True
+        Me.btnTeam18GoBackResults.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTeam18GoBackResults.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnTeam18GoBackResults.Location = New System.Drawing.Point(3, 5)
+        Me.btnTeam18GoBackResults.Name = "btnTeam18GoBackResults"
+        Me.btnTeam18GoBackResults.Size = New System.Drawing.Size(87, 34)
+        Me.btnTeam18GoBackResults.TabIndex = 9
+        Me.btnTeam18GoBackResults.Text = "<--- Go Back"
+        Me.btnTeam18GoBackResults.UseVisualStyleBackColor = True
         '
-        'btnRCHAccept
+        'btnTeam18Accept
         '
-        Me.btnRCHAccept.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRCHAccept.ForeColor = System.Drawing.Color.DarkGreen
-        Me.btnRCHAccept.Location = New System.Drawing.Point(358, 350)
-        Me.btnRCHAccept.Name = "btnRCHAccept"
-        Me.btnRCHAccept.Size = New System.Drawing.Size(87, 34)
-        Me.btnRCHAccept.TabIndex = 10
-        Me.btnRCHAccept.Text = "Accept"
-        Me.btnRCHAccept.UseVisualStyleBackColor = True
+        Me.btnTeam18Accept.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTeam18Accept.ForeColor = System.Drawing.Color.DarkGreen
+        Me.btnTeam18Accept.Location = New System.Drawing.Point(358, 350)
+        Me.btnTeam18Accept.Name = "btnTeam18Accept"
+        Me.btnTeam18Accept.Size = New System.Drawing.Size(87, 34)
+        Me.btnTeam18Accept.TabIndex = 10
+        Me.btnTeam18Accept.Text = "Accept"
+        Me.btnTeam18Accept.UseVisualStyleBackColor = True
         '
         'frmRCHResults
         '
@@ -298,42 +298,42 @@ Partial Class frmRCHResults
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(495, 394)
-        Me.Controls.Add(Me.btnRCHAccept)
-        Me.Controls.Add(Me.btnRCHGoBackResults)
-        Me.Controls.Add(Me.grpRCHSpecs)
-        Me.Controls.Add(Me.gbxRCHCar)
+        Me.Controls.Add(Me.btnTeam18Accept)
+        Me.Controls.Add(Me.btnTeam18GoBackResults)
+        Me.Controls.Add(Me.grpTeam18Specs)
+        Me.Controls.Add(Me.gbxTeam18Car)
         Me.Name = "frmRCHResults"
         Me.Text = "Results"
-        Me.gbxRCHCar.ResumeLayout(False)
-        Me.tblRCHCarInfo.ResumeLayout(False)
-        Me.tblRCHCarInfo.PerformLayout()
-        Me.grpRCHSpecs.ResumeLayout(False)
-        Me.TableLayoutPanel1.ResumeLayout(False)
-        Me.TableLayoutPanel1.PerformLayout()
+        Me.gbxTeam18Car.ResumeLayout(False)
+        Me.tblTeam18CarInfo.ResumeLayout(False)
+        Me.tblTeam18CarInfo.PerformLayout()
+        Me.grpTeam18Specs.ResumeLayout(False)
+        Me.tblTeam18CarSpecs.ResumeLayout(False)
+        Me.tblTeam18CarSpecs.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents gbxRCHCar As GroupBox
-    Friend WithEvents rbxRCHModel As RichTextBox
-    Friend WithEvents rbxRCHMake As RichTextBox
+    Friend WithEvents gbxTeam18Car As GroupBox
+    Friend WithEvents rbxTeam18Model As RichTextBox
+    Friend WithEvents rbxTeam18Make As RichTextBox
     Friend WithEvents lblRCHModel As Label
-    Friend WithEvents lblRCHMake As Label
-    Friend WithEvents grpRCHSpecs As GroupBox
-    Friend WithEvents lblRCHFuelEfficiency As Label
-    Friend WithEvents lblRCHTransmission As Label
-    Friend WithEvents lblRCHEngine As Label
-    Friend WithEvents lblRCHCarType As Label
-    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
-    Friend WithEvents lblRCHBodyType As Label
-    Friend WithEvents tblRCHCarInfo As TableLayoutPanel
-    Friend WithEvents rtxRCHBodyType As RichTextBox
-    Friend WithEvents rtxRCHFuelEfficiency As RichTextBox
-    Friend WithEvents rtxRCHEngine As RichTextBox
-    Friend WithEvents rtxRCHTransmission As RichTextBox
-    Friend WithEvents rtxRCHCarType As RichTextBox
-    Friend WithEvents RichTextBox1 As RichTextBox
-    Friend WithEvents lblRCHCost As Label
-    Friend WithEvents btnRCHGoBackResults As Button
-    Friend WithEvents btnRCHAccept As Button
+    Friend WithEvents lblTeam18Make As Label
+    Friend WithEvents grpTeam18Specs As GroupBox
+    Friend WithEvents lblTeam18FuelEfficiency As Label
+    Friend WithEvents lblTeam18Transmission As Label
+    Friend WithEvents lblTeam18Engine As Label
+    Friend WithEvents lblTeam18CarType As Label
+    Friend WithEvents tblTeam18CarSpecs As TableLayoutPanel
+    Friend WithEvents lblTeam18BodyType As Label
+    Friend WithEvents tblTeam18CarInfo As TableLayoutPanel
+    Friend WithEvents rtxTeam18BodyType As RichTextBox
+    Friend WithEvents rtxTeam18FuelEfficiency As RichTextBox
+    Friend WithEvents rtxTeam18Engine As RichTextBox
+    Friend WithEvents rtxTeam18Transmission As RichTextBox
+    Friend WithEvents rtxTeam18CarType As RichTextBox
+    Friend WithEvents rbxTeam18Cost As RichTextBox
+    Friend WithEvents lblTeam18Cost As Label
+    Friend WithEvents btnTeam18GoBackResults As Button
+    Friend WithEvents btnTeam18Accept As Button
 End Class

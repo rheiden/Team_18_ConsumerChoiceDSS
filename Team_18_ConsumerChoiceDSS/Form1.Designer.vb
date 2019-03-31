@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class frmRCHWelcome
+Partial Class frmTeam18Welcome
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,152 +22,152 @@ Partial Class frmRCHWelcome
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmRCHWelcome))
-        Me.lblRCHWelcome = New System.Windows.Forms.Label()
-        Me.lblRCHUsername = New System.Windows.Forms.Label()
-        Me.txtRCHUsername = New System.Windows.Forms.TextBox()
-        Me.lblRCHPassword = New System.Windows.Forms.Label()
-        Me.txtRCHPassword = New System.Windows.Forms.TextBox()
-        Me.btnRCHLogin = New System.Windows.Forms.Button()
-        Me.btnRCHExitWelcome = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.btnRCHCreateAccountWelcome = New System.Windows.Forms.Button()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmTeam18Welcome))
+        Me.lblTeam18Welcome = New System.Windows.Forms.Label()
+        Me.lblTeam18Username = New System.Windows.Forms.Label()
+        Me.txtTeam18Username = New System.Windows.Forms.TextBox()
+        Me.lblTeam18Password = New System.Windows.Forms.Label()
+        Me.txtTeam18Password = New System.Windows.Forms.TextBox()
+        Me.btnTeam18Login = New System.Windows.Forms.Button()
+        Me.btnTeam18ExitWelcome = New System.Windows.Forms.Button()
+        Me.pbxTeam18CarLogo = New System.Windows.Forms.PictureBox()
+        Me.lblTeam18Account = New System.Windows.Forms.Label()
+        Me.btnTeam18CreateAccountWelcome = New System.Windows.Forms.Button()
+        CType(Me.pbxTeam18CarLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'lblRCHWelcome
+        'lblTeam18Welcome
         '
-        Me.lblRCHWelcome.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblRCHWelcome.AutoSize = True
-        Me.lblRCHWelcome.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRCHWelcome.Location = New System.Drawing.Point(103, 9)
-        Me.lblRCHWelcome.Name = "lblRCHWelcome"
-        Me.lblRCHWelcome.Size = New System.Drawing.Size(77, 19)
-        Me.lblRCHWelcome.TabIndex = 2
-        Me.lblRCHWelcome.Text = "Welcome!"
+        Me.lblTeam18Welcome.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblTeam18Welcome.AutoSize = True
+        Me.lblTeam18Welcome.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTeam18Welcome.Location = New System.Drawing.Point(103, 9)
+        Me.lblTeam18Welcome.Name = "lblTeam18Welcome"
+        Me.lblTeam18Welcome.Size = New System.Drawing.Size(77, 19)
+        Me.lblTeam18Welcome.TabIndex = 2
+        Me.lblTeam18Welcome.Text = "Welcome!"
         '
-        'lblRCHUsername
+        'lblTeam18Username
         '
-        Me.lblRCHUsername.AutoSize = True
-        Me.lblRCHUsername.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRCHUsername.Location = New System.Drawing.Point(31, 74)
-        Me.lblRCHUsername.Name = "lblRCHUsername"
-        Me.lblRCHUsername.Size = New System.Drawing.Size(70, 15)
-        Me.lblRCHUsername.TabIndex = 3
-        Me.lblRCHUsername.Text = "Username: "
+        Me.lblTeam18Username.AutoSize = True
+        Me.lblTeam18Username.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTeam18Username.Location = New System.Drawing.Point(31, 74)
+        Me.lblTeam18Username.Name = "lblTeam18Username"
+        Me.lblTeam18Username.Size = New System.Drawing.Size(70, 15)
+        Me.lblTeam18Username.TabIndex = 3
+        Me.lblTeam18Username.Text = "Username: "
         '
-        'txtRCHUsername
+        'txtTeam18Username
         '
-        Me.txtRCHUsername.Location = New System.Drawing.Point(107, 72)
-        Me.txtRCHUsername.Name = "txtRCHUsername"
-        Me.txtRCHUsername.Size = New System.Drawing.Size(108, 20)
-        Me.txtRCHUsername.TabIndex = 0
+        Me.txtTeam18Username.Location = New System.Drawing.Point(107, 72)
+        Me.txtTeam18Username.Name = "txtTeam18Username"
+        Me.txtTeam18Username.Size = New System.Drawing.Size(108, 20)
+        Me.txtTeam18Username.TabIndex = 0
         '
-        'lblRCHPassword
+        'lblTeam18Password
         '
-        Me.lblRCHPassword.AutoSize = True
-        Me.lblRCHPassword.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRCHPassword.Location = New System.Drawing.Point(38, 120)
-        Me.lblRCHPassword.Name = "lblRCHPassword"
-        Me.lblRCHPassword.Size = New System.Drawing.Size(63, 15)
-        Me.lblRCHPassword.TabIndex = 5
-        Me.lblRCHPassword.Text = "Password:"
+        Me.lblTeam18Password.AutoSize = True
+        Me.lblTeam18Password.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTeam18Password.Location = New System.Drawing.Point(38, 120)
+        Me.lblTeam18Password.Name = "lblTeam18Password"
+        Me.lblTeam18Password.Size = New System.Drawing.Size(63, 15)
+        Me.lblTeam18Password.TabIndex = 5
+        Me.lblTeam18Password.Text = "Password:"
         '
-        'txtRCHPassword
+        'txtTeam18Password
         '
-        Me.txtRCHPassword.Location = New System.Drawing.Point(107, 118)
-        Me.txtRCHPassword.Name = "txtRCHPassword"
-        Me.txtRCHPassword.Size = New System.Drawing.Size(108, 20)
-        Me.txtRCHPassword.TabIndex = 1
+        Me.txtTeam18Password.Location = New System.Drawing.Point(107, 118)
+        Me.txtTeam18Password.Name = "txtTeam18Password"
+        Me.txtTeam18Password.Size = New System.Drawing.Size(108, 20)
+        Me.txtTeam18Password.TabIndex = 1
         '
-        'btnRCHLogin
+        'btnTeam18Login
         '
-        Me.btnRCHLogin.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRCHLogin.ForeColor = System.Drawing.Color.DarkGreen
-        Me.btnRCHLogin.Location = New System.Drawing.Point(100, 157)
-        Me.btnRCHLogin.Name = "btnRCHLogin"
-        Me.btnRCHLogin.Size = New System.Drawing.Size(75, 34)
-        Me.btnRCHLogin.TabIndex = 7
-        Me.btnRCHLogin.Text = "Login"
-        Me.btnRCHLogin.UseVisualStyleBackColor = True
+        Me.btnTeam18Login.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTeam18Login.ForeColor = System.Drawing.Color.DarkGreen
+        Me.btnTeam18Login.Location = New System.Drawing.Point(100, 157)
+        Me.btnTeam18Login.Name = "btnTeam18Login"
+        Me.btnTeam18Login.Size = New System.Drawing.Size(75, 34)
+        Me.btnTeam18Login.TabIndex = 7
+        Me.btnTeam18Login.Text = "Login"
+        Me.btnTeam18Login.UseVisualStyleBackColor = True
         '
-        'btnRCHExitWelcome
+        'btnTeam18ExitWelcome
         '
-        Me.btnRCHExitWelcome.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRCHExitWelcome.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnRCHExitWelcome.Location = New System.Drawing.Point(100, 207)
-        Me.btnRCHExitWelcome.Name = "btnRCHExitWelcome"
-        Me.btnRCHExitWelcome.Size = New System.Drawing.Size(75, 34)
-        Me.btnRCHExitWelcome.TabIndex = 8
-        Me.btnRCHExitWelcome.Text = "Exit"
-        Me.btnRCHExitWelcome.UseVisualStyleBackColor = True
+        Me.btnTeam18ExitWelcome.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTeam18ExitWelcome.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnTeam18ExitWelcome.Location = New System.Drawing.Point(100, 207)
+        Me.btnTeam18ExitWelcome.Name = "btnTeam18ExitWelcome"
+        Me.btnTeam18ExitWelcome.Size = New System.Drawing.Size(75, 34)
+        Me.btnTeam18ExitWelcome.TabIndex = 8
+        Me.btnTeam18ExitWelcome.Text = "Exit"
+        Me.btnTeam18ExitWelcome.UseVisualStyleBackColor = True
         '
-        'PictureBox1
+        'pbxTeam18CarLogo
         '
-        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(67, 266)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(133, 142)
-        Me.PictureBox1.TabIndex = 9
-        Me.PictureBox1.TabStop = False
+        Me.pbxTeam18CarLogo.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.pbxTeam18CarLogo.Image = CType(resources.GetObject("pbxTeam18CarLogo.Image"), System.Drawing.Image)
+        Me.pbxTeam18CarLogo.Location = New System.Drawing.Point(67, 266)
+        Me.pbxTeam18CarLogo.Name = "pbxTeam18CarLogo"
+        Me.pbxTeam18CarLogo.Size = New System.Drawing.Size(133, 142)
+        Me.pbxTeam18CarLogo.TabIndex = 9
+        Me.pbxTeam18CarLogo.TabStop = False
         '
-        'Label2
+        'lblTeam18Account
         '
-        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(0, 40)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(140, 15)
-        Me.Label2.TabIndex = 11
-        Me.Label2.Text = "Dont Have an Account?: "
+        Me.lblTeam18Account.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblTeam18Account.AutoSize = True
+        Me.lblTeam18Account.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTeam18Account.ForeColor = System.Drawing.Color.White
+        Me.lblTeam18Account.Location = New System.Drawing.Point(0, 40)
+        Me.lblTeam18Account.Name = "lblTeam18Account"
+        Me.lblTeam18Account.Size = New System.Drawing.Size(140, 15)
+        Me.lblTeam18Account.TabIndex = 11
+        Me.lblTeam18Account.Text = "Dont Have an Account?: "
         '
-        'btnRCHCreateAccountWelcome
+        'btnTeam18CreateAccountWelcome
         '
-        Me.btnRCHCreateAccountWelcome.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRCHCreateAccountWelcome.ForeColor = System.Drawing.Color.Red
-        Me.btnRCHCreateAccountWelcome.Location = New System.Drawing.Point(136, 35)
-        Me.btnRCHCreateAccountWelcome.Name = "btnRCHCreateAccountWelcome"
-        Me.btnRCHCreateAccountWelcome.Size = New System.Drawing.Size(123, 24)
-        Me.btnRCHCreateAccountWelcome.TabIndex = 12
-        Me.btnRCHCreateAccountWelcome.Text = "Create New Account"
-        Me.btnRCHCreateAccountWelcome.UseVisualStyleBackColor = True
+        Me.btnTeam18CreateAccountWelcome.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTeam18CreateAccountWelcome.ForeColor = System.Drawing.Color.Red
+        Me.btnTeam18CreateAccountWelcome.Location = New System.Drawing.Point(136, 35)
+        Me.btnTeam18CreateAccountWelcome.Name = "btnTeam18CreateAccountWelcome"
+        Me.btnTeam18CreateAccountWelcome.Size = New System.Drawing.Size(123, 24)
+        Me.btnTeam18CreateAccountWelcome.TabIndex = 12
+        Me.btnTeam18CreateAccountWelcome.Text = "Create New Account"
+        Me.btnTeam18CreateAccountWelcome.UseVisualStyleBackColor = True
         '
-        'frmRCHWelcome
+        'frmTeam18Welcome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(280, 403)
-        Me.Controls.Add(Me.btnRCHCreateAccountWelcome)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.btnRCHExitWelcome)
-        Me.Controls.Add(Me.btnRCHLogin)
-        Me.Controls.Add(Me.txtRCHPassword)
-        Me.Controls.Add(Me.lblRCHPassword)
-        Me.Controls.Add(Me.txtRCHUsername)
-        Me.Controls.Add(Me.lblRCHUsername)
-        Me.Controls.Add(Me.lblRCHWelcome)
-        Me.Name = "frmRCHWelcome"
+        Me.Controls.Add(Me.btnTeam18CreateAccountWelcome)
+        Me.Controls.Add(Me.lblTeam18Account)
+        Me.Controls.Add(Me.pbxTeam18CarLogo)
+        Me.Controls.Add(Me.btnTeam18ExitWelcome)
+        Me.Controls.Add(Me.btnTeam18Login)
+        Me.Controls.Add(Me.txtTeam18Password)
+        Me.Controls.Add(Me.lblTeam18Password)
+        Me.Controls.Add(Me.txtTeam18Username)
+        Me.Controls.Add(Me.lblTeam18Username)
+        Me.Controls.Add(Me.lblTeam18Welcome)
+        Me.Name = "frmTeam18Welcome"
         Me.Text = "Login"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbxTeam18CarLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents lblRCHWelcome As Label
-    Friend WithEvents lblRCHUsername As Label
-    Friend WithEvents txtRCHUsername As TextBox
-    Friend WithEvents lblRCHPassword As Label
-    Friend WithEvents txtRCHPassword As TextBox
-    Friend WithEvents btnRCHLogin As Button
-    Friend WithEvents btnRCHExitWelcome As Button
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents btnRCHCreateAccountWelcome As Button
+    Friend WithEvents lblTeam18Welcome As Label
+    Friend WithEvents lblTeam18Username As Label
+    Friend WithEvents txtTeam18Username As TextBox
+    Friend WithEvents lblTeam18Password As Label
+    Friend WithEvents txtTeam18Password As TextBox
+    Friend WithEvents btnTeam18Login As Button
+    Friend WithEvents btnTeam18ExitWelcome As Button
+    Friend WithEvents pbxTeam18CarLogo As PictureBox
+    Friend WithEvents lblTeam18Account As Label
+    Friend WithEvents btnTeam18CreateAccountWelcome As Button
 End Class
