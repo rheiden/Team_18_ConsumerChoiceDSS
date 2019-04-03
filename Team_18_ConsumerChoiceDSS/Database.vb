@@ -1,6 +1,6 @@
 ﻿Imports System.Data.OleDb                             'Team18: We use the OleDB namespace for an MS Access namespace
 '**************************************************************************************************************************
-Public Class Database
+Public Class DataBase
 
     'ADO.NET Data Provider Objects
     Private Team18DataAdapter As New OleDbDataAdapter    ': ADO.NET DataAdapter Object -  The DataAdapter facilitates the conversion from the external Database to the internal DataSet
@@ -12,7 +12,7 @@ Public Class Database
     Private Team18TableName As String                    'Team18: sql Commands are executed on tables
     '**************************************************************************************************************************
     Public Sub New()
-        ' This sub creates a new DBMSe object
+        ' This sub creates a new Database object
     End Sub
     '**************************************************************************************************************************
     Public Sub RunSQL(ByVal Team18TableName, ByVal Team18SQL, ByVal Team18DataSet, ByVal Team18ConnectionString)
@@ -32,3 +32,4 @@ Public Class Database
 
 
 End Class
+
