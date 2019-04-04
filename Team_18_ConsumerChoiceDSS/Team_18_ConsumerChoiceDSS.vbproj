@@ -72,6 +72,9 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acceleration.vb" />
+    <Compile Include="Braking.vb" />
+    <Compile Include="CurbWeight.vb" />
     <Compile Include="DataBase.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -122,6 +125,9 @@
     <Compile Include="Form9.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FuelTankCapacity.vb" />
+    <Compile Include="Handling.vb" />
+    <Compile Include="Login.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -138,6 +144,10 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="ObjectCreator.vb" />
+    <Compile Include="Safety.vb" />
+    <Compile Include="Speed.vb" />
+    <Compile Include="Torque.vb" />
+    <Compile Include="TurningRadius.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
