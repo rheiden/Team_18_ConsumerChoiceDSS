@@ -7,7 +7,7 @@ Public Class Handling
     'Team 18 Creates the instance properties of the Handling class
     Public Property ID As Long 'Team 18 a number that is specific to each Handling object
     Public Property Name As String 'Team 18 the name of the car that is asoociated with a specific instance of the Handling class
-    Public Property Braking As Single 'Team 18 is how well the car can handle turns
+    Public Property Handling As Single 'Team 18 is how well the car can handle turns
 
     'Team 18 Creates the constructor for the Handling class
     Public Sub New()
