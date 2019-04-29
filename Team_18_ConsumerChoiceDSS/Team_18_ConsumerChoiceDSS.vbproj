@@ -144,6 +144,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="ObjectCreator.vb" />
+    <Compile Include="Optimization.vb" />
     <Compile Include="Safety.vb" />
     <Compile Include="Speed.vb" />
     <Compile Include="Torque.vb" />
