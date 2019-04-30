@@ -23,7 +23,6 @@ Partial Class frmTeam18CarInfo
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblTeam18TitleCarInfo = New System.Windows.Forms.Label()
-        Me.lblTeam18Budget = New System.Windows.Forms.Label()
         Me.lblTeam18UsedNew = New System.Windows.Forms.Label()
         Me.lblTeam18Engine = New System.Windows.Forms.Label()
         Me.lblTeam18Transmission = New System.Windows.Forms.Label()
@@ -35,7 +34,6 @@ Partial Class frmTeam18CarInfo
         Me.cbxTeam18Engine = New System.Windows.Forms.ComboBox()
         Me.lblTeam18Model = New System.Windows.Forms.Label()
         Me.cbxTeam18UsedNew = New System.Windows.Forms.ComboBox()
-        Me.txtTeam18Budget = New System.Windows.Forms.TextBox()
         Me.btnTeam18GoBackCarInfo = New System.Windows.Forms.Button()
         Me.btnTeam18ConfirmInfo = New System.Windows.Forms.Button()
         Me.btnTeam18ExitCarInfo = New System.Windows.Forms.Button()
@@ -51,16 +49,6 @@ Partial Class frmTeam18CarInfo
         Me.lblTeam18TitleCarInfo.Size = New System.Drawing.Size(283, 19)
         Me.lblTeam18TitleCarInfo.TabIndex = 0
         Me.lblTeam18TitleCarInfo.Text = "Please Enter the Following Information: "
-        '
-        'lblTeam18Budget
-        '
-        Me.lblTeam18Budget.AutoSize = True
-        Me.lblTeam18Budget.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTeam18Budget.Location = New System.Drawing.Point(191, 57)
-        Me.lblTeam18Budget.Name = "lblTeam18Budget"
-        Me.lblTeam18Budget.Size = New System.Drawing.Size(60, 15)
-        Me.lblTeam18Budget.TabIndex = 1
-        Me.lblTeam18Budget.Text = "Budget: $"
         '
         'lblTeam18UsedNew
         '
@@ -121,7 +109,7 @@ Partial Class frmTeam18CarInfo
         Me.TableLayoutPanel1.Controls.Add(Me.lblTeam18Transmission, 0, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.lblTeam18Model, 0, 4)
         Me.TableLayoutPanel1.Controls.Add(Me.cbxTeam18UsedNew, 1, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(74, 114)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(54, 82)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 5
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
@@ -191,13 +179,6 @@ Partial Class frmTeam18CarInfo
         Me.cbxTeam18UsedNew.Size = New System.Drawing.Size(121, 21)
         Me.cbxTeam18UsedNew.TabIndex = 7
         '
-        'txtTeam18Budget
-        '
-        Me.txtTeam18Budget.Location = New System.Drawing.Point(250, 55)
-        Me.txtTeam18Budget.Name = "txtTeam18Budget"
-        Me.txtTeam18Budget.Size = New System.Drawing.Size(100, 20)
-        Me.txtTeam18Budget.TabIndex = 7
-        '
         'btnTeam18GoBackCarInfo
         '
         Me.btnTeam18GoBackCarInfo.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -240,9 +221,7 @@ Partial Class frmTeam18CarInfo
         Me.Controls.Add(Me.btnTeam18ExitCarInfo)
         Me.Controls.Add(Me.btnTeam18ConfirmInfo)
         Me.Controls.Add(Me.btnTeam18GoBackCarInfo)
-        Me.Controls.Add(Me.txtTeam18Budget)
         Me.Controls.Add(Me.TableLayoutPanel1)
-        Me.Controls.Add(Me.lblTeam18Budget)
         Me.Controls.Add(Me.lblTeam18TitleCarInfo)
         Me.Name = "frmTeam18CarInfo"
         Me.Text = "Car Information"
@@ -254,14 +233,12 @@ Partial Class frmTeam18CarInfo
     End Sub
 
     Friend WithEvents lblTeam18TitleCarInfo As Label
-    Friend WithEvents lblTeam18Budget As Label
     Friend WithEvents lblTeam18UsedNew As Label
     Friend WithEvents lblTeam18Engine As Label
     Friend WithEvents lblTeam18Transmission As Label
     Friend WithEvents lblTeam18Fuel As Label
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents lblTeam18Model As Label
-    Friend WithEvents txtTeam18Budget As TextBox
     Friend WithEvents cbxTeam18Engine As ComboBox
     Friend WithEvents cbxTeam18UsedNew As ComboBox
     Friend WithEvents cbxTeam18Transmission As ComboBox
