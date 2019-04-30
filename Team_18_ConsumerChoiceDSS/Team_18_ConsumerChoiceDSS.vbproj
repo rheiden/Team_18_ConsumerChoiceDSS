@@ -81,6 +81,7 @@
   <ItemGroup>
     <Compile Include="Car.vb" />
     <Compile Include="DataBase.vb" />
+    <Compile Include="Deviation.vb" />
     <Compile Include="LoginForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +106,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="myCar.vb" />
     <Compile Include="NewAccountForm.Designer.vb">
       <DependentUpon>NewAccountForm.vb</DependentUpon>
     </Compile>

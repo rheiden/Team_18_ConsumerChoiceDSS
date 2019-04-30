@@ -73,7 +73,7 @@ Public Class Optimization
         Team18Solver.AddGoal(objIndex, 1, True)
         For Each dev As Deviation In Deviation.DeviationList
             For Each myCar As Car In Car.CarList
-                dvIndex = Team18Solver.GetIndexFromKey(dev.Department & "_" & myCar.Car)
+                dvIndex = Team18Solver.GetIndexFromKey(dev.Department & "_" & myCar.Model)
                 Dim myActivityIndex As Integer = Car.CarList.IndexOf(myCar)
                 coefficient = dev.Deviation(myActivityIndex)
                 Team18Solver.SetCoefficient(constraintIndex, dvIndex, coefficient)
