@@ -12,7 +12,7 @@ Public Class Optimization
     Dim objKey As String = "Objective Function"
     Dim objIndex As Integer
     Public optimalObj As Single
-    Public dvValues(Car.CarList, Goal.GoalList) As Single
+    Public dvValues(Car.CarList.Count - 1, Goal.GoalList.Count - 1) As Single
     '**************************************************************************************************************************
     Public Sub BuildModel()
         '----------------------------------------------------------------------------------------------------------
@@ -60,10 +60,10 @@ Public Class Optimization
         'Team18: Budget Constraint
         constraintKey = "Budget Constraint"
         Team18Solver.AddRow(constraintKey, constraintIndex)
-        Team18Solver.SetBounds(constraintIndex, 0, CInt(frmTeam18CarInfo.txtTeam18Budget.Text))
+        Team18Solver.SetBounds(constraintIndex, 0, CInt(frmTeam18NewUser.txtTeam18Budget.Text))
         For Each myCar As Car In Car.CarList
             dvIndex = Team18Solver.GetIndexFromKey(myCar.Make & myCar.Model)
-            coefficient = myCar.Price
+            coefficient = myCar.Cost
             Team18Solver.SetCoefficient(constraintIndex, dvIndex, coefficient)
         Next
     End Sub
