@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmRCHCarInfo
+Partial Class frmTeam18CarInfo
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -231,7 +231,7 @@ Partial Class frmRCHCarInfo
         Me.btnTeam18ExitCarInfo.Text = "Exit"
         Me.btnTeam18ExitCarInfo.UseVisualStyleBackColor = True
         '
-        'frmRCHCarInfo
+        'frmTeam18CarInfo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -244,7 +244,7 @@ Partial Class frmRCHCarInfo
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.lblTeam18Budget)
         Me.Controls.Add(Me.lblTeam18TitleCarInfo)
-        Me.Name = "frmRCHCarInfo"
+        Me.Name = "frmTeam18CarInfo"
         Me.Text = "Car Information"
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
