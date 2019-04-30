@@ -39,6 +39,8 @@ Partial Class frmTeam18NewUser
         Me.btnTeam18ExitNewUser = New System.Windows.Forms.Button()
         Me.btnTeam18CreateAccount = New System.Windows.Forms.Button()
         Me.btnTeam18GoBackNewUser = New System.Windows.Forms.Button()
+        Me.txtTeam18Budget = New System.Windows.Forms.TextBox()
+        Me.lblTeam18Budget = New System.Windows.Forms.Label()
         Me.tblTeam18UserInfo.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -66,7 +68,7 @@ Partial Class frmTeam18NewUser
         '
         Me.lblTeam18NewPassword.AutoSize = True
         Me.lblTeam18NewPassword.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTeam18NewPassword.Location = New System.Drawing.Point(167, 104)
+        Me.lblTeam18NewPassword.Location = New System.Drawing.Point(167, 87)
         Me.lblTeam18NewPassword.Name = "lblTeam18NewPassword"
         Me.lblTeam18NewPassword.Size = New System.Drawing.Size(66, 15)
         Me.lblTeam18NewPassword.TabIndex = 2
@@ -180,7 +182,7 @@ Partial Class frmTeam18NewUser
         '
         'txtTeam18NewPass
         '
-        Me.txtTeam18NewPass.Location = New System.Drawing.Point(243, 102)
+        Me.txtTeam18NewPass.Location = New System.Drawing.Point(243, 85)
         Me.txtTeam18NewPass.Name = "txtTeam18NewPass"
         Me.txtTeam18NewPass.Size = New System.Drawing.Size(100, 20)
         Me.txtTeam18NewPass.TabIndex = 1
@@ -218,12 +220,31 @@ Partial Class frmTeam18NewUser
         Me.btnTeam18GoBackNewUser.Text = "<--- Go Back"
         Me.btnTeam18GoBackNewUser.UseVisualStyleBackColor = True
         '
+        'txtTeam18Budget
+        '
+        Me.txtTeam18Budget.Location = New System.Drawing.Point(243, 111)
+        Me.txtTeam18Budget.Name = "txtTeam18Budget"
+        Me.txtTeam18Budget.Size = New System.Drawing.Size(100, 20)
+        Me.txtTeam18Budget.TabIndex = 10
+        '
+        'lblTeam18Budget
+        '
+        Me.lblTeam18Budget.AutoSize = True
+        Me.lblTeam18Budget.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTeam18Budget.Location = New System.Drawing.Point(173, 113)
+        Me.lblTeam18Budget.Name = "lblTeam18Budget"
+        Me.lblTeam18Budget.Size = New System.Drawing.Size(60, 15)
+        Me.lblTeam18Budget.TabIndex = 9
+        Me.lblTeam18Budget.Text = "Budget: $"
+        '
         'frmTeam18NewUser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(495, 404)
+        Me.Controls.Add(Me.txtTeam18Budget)
+        Me.Controls.Add(Me.lblTeam18Budget)
         Me.Controls.Add(Me.btnTeam18GoBackNewUser)
         Me.Controls.Add(Me.btnTeam18CreateAccount)
         Me.Controls.Add(Me.btnTeam18ExitNewUser)
@@ -259,4 +280,6 @@ Partial Class frmTeam18NewUser
     Friend WithEvents btnTeam18ExitNewUser As Button
     Friend WithEvents btnTeam18CreateAccount As Button
     Friend WithEvents btnTeam18GoBackNewUser As Button
+    Friend WithEvents txtTeam18Budget As TextBox
+    Friend WithEvents lblTeam18Budget As Label
 End Class

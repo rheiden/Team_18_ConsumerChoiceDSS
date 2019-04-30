@@ -1,6 +1,7 @@
 ﻿Imports Microsoft.SolverFoundation.Common
 Imports Microsoft.SolverFoundation.Services
 Imports Microsoft.SolverFoundation.Solvers
+'**************************************************************************************************************************
 Public Class Optimization
     Dim Team18Solver As New SimplexSolver
     Dim dvKey As String
@@ -12,6 +13,7 @@ Public Class Optimization
     Dim objIndex As Integer
     Public optimalObj As Single
     Public dvValues(Car.CarList, Goal.GoalList) As Single
+    '**************************************************************************************************************************
     Public Sub BuildModel()
         '----------------------------------------------------------------------------------------------------------
         'Team18: Define the decision variables
@@ -23,7 +25,7 @@ Public Class Optimization
             Team18Solver.SetBounds(dvIndex, 0, 1)
             Team18Solver.SetIntegrality(dvIndex, True)
         Next
-
+        '----------------------------------------------------------------------------------------------------------
         'Team18: Defines goal decision variables
         For Each myGoal As Goal In Goal.GoalList
             dvKey = "Dplus " & myGoal.Goal
@@ -36,7 +38,6 @@ Public Class Optimization
         Next
         '----------------------------------------------------------------------------------------------------------
         'Team18: Items Purchased Constraint
-
         constraintKey = "Purchase Constraint"
         Team18Solver.AddRow(constraintKey, constraintIndex)
         Team18Solver.SetBounds(constraintIndex, 1, 1)
@@ -50,7 +51,7 @@ Public Class Optimization
         constraintKey = "Surplus Constraint"
         Team18Solver.AddRow(constraintKey, constraintIndex)
         Team18Solver.SetBounds(constraintIndex, 0, Rational.PositiveInfinity)
-        For Each myGoal As Goal In myGoal.GoalList
+        For Each myGoal As Goal In Goal.GoalList
             dvIndex = Team18Solver.getIndexFromKey("Dplus " & myGoal.Goal)
             coefficient = 1
             Team18Solver.SetCoefficient(constraintIndex, dvIndex, coefficient)
@@ -66,9 +67,11 @@ Public Class Optimization
             Team18Solver.SetCoefficient(constraintIndex, dvIndex, coefficient)
         Next
     End Sub
+    '**************************************************************************************************************************
     Public Sub RunModel()
 
     End Sub
+    '**************************************************************************************************************************
     Public Sub ShowAnswer()
 
     End Sub
