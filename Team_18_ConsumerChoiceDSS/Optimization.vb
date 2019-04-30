@@ -12,7 +12,7 @@ Public Class Optimization
     Dim objKey As String = "Objective Function"
     Dim objIndex As Integer
     Public optimalObj As Single
-    Public dvValues(Car.CarList, Goal.GoalList) As Single
+    Public dvValues(Car.CarList.Count - 1, Goal.GoalList.Count - 1) As Single
     '**************************************************************************************************************************
     Public Sub BuildModel()
         '----------------------------------------------------------------------------------------------------------
@@ -60,20 +60,124 @@ Public Class Optimization
         'Team18: Budget Constraint
         constraintKey = "Budget Constraint"
         Team18Solver.AddRow(constraintKey, constraintIndex)
-        'Team18Solver.SetBounds(constraintIndex, 0, CInt(frmTeam18CarInfo.txtTeam18Budget.Text))
+        Team18Solver.SetBounds(constraintIndex, 0, CInt(frmTeam18NewUser.txtTeam18Budget.Text))
         For Each myCar As Car In Car.CarList
             dvIndex = Team18Solver.GetIndexFromKey(myCar.Make & myCar.Model)
             coefficient = myCar.Cost
             Team18Solver.SetCoefficient(constraintIndex, dvIndex, coefficient)
         Next
+        '----------------------------------------------------------------------------------------------------------
+        'Team 18: Objective Function
+        objKey = "Deviation"
+        Team18Solver.AddRow(objKey, objIndex)
+        Team18Solver.AddGoal(objIndex, 1, True)
     End Sub
     '**************************************************************************************************************************
     Public Sub RunModel()
+
+        'CLR runs the solver and displays the reselts
+        Dim mySolverParms As New SimplexSolverParams
+        mySolverParms.MixedIntegerGapTolerance = 1
+        mySolverParms.VariableFeasibilityTolerance = 0.00001
+        mySolverParms.MaxPivotCount = 1000
+        Team18Solver.Solve(mySolverParms)
+
+        If Team18Solver.Result = LinearResult.UnboundedPrimal Then
+            MessageBox.Show("Solution is unbounded")
+            Exit Sub
+        ElseIf _
+        Team18Solver.Result = LinearResult.InfeasiblePrimal Then
+            MessageBox.Show("Decision model is infeasible")
+            Exit Sub
+        Else
+            ShowAnswer()
+        End If
 
     End Sub
     '**************************************************************************************************************************
     Public Sub ShowAnswer()
 
+        'CLR Now we display the optimal values of the variables and objective function
+        optimalObj = CSng(Team18Solver.GetValue(objIndex).ToDouble)
+
+        'CLR We transfer the values of the decision variables to an array 
+        Dim rowIndex As Integer = 0
+        Dim columnIndex As Integer = 0
+
+        '
+        For Each emp As Employee In Employee.EmployeeList
+            rowIndex = Employee.EmployeeList.IndexOf(emp)
+            For Each shift As Shift In shift.ShiftList
+                columnIndex = shift.ShiftList.IndexOf(shift)
+                dvKey = emp.EmployeeName & "_" & shift.ShiftName
+                dvIndex = HW5CLRModel.GetIndexFromKey(dvKey)
+                dvValues(rowIndex, columnIndex) = CSng(HW5CLRModel.GetValue(dvIndex).ToDouble)
+            Next
+        Next
+        '************************************************************************************
+        Solution.CLRTable.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single
+        '
+        'CLR We enter the column headings into the table
+        For column As Integer = 1 To Solution.CLRTable.ColumnCount - 1
+            Dim myLabel As New Label
+            myLabel.Text = "Activity " & CStr(column)
+            Solution.CLRTable.Controls.Add(myLabel)
+            myLabel.Visible = True
+            myLabel.TextAlign = ContentAlignment.MiddleCenter
+            Solution.CLRTable.SetRow(myLabel, 0)
+            Solution.CLRTable.SetColumn(myLabel, column)
+            myLabel.Anchor = AnchorStyles.Bottom
+            myLabel.Anchor = AnchorStyles.Top
+            myLabel.Anchor = AnchorStyles.Left
+            myLabel.Anchor = AnchorStyles.Right
+
+        Next
+        '
+        'CLR We enter the row headings into the table
+        rowIndex = 0
+        For Each emp As Employee In Employee.EmployeeList
+            Dim myLabel As New Label
+            myLabel.Text = emp.EmployeeName
+            myLabel.Visible = True
+            myLabel.TextAlign = ContentAlignment.MiddleCenter
+            Solution.CLRTable.SetRow(myLabel, rowIndex + 1)
+            Solution.CLRTable.SetColumn(myLabel, 0)
+            Solution.CLRTable.Dock = DockStyle.Fill
+            Solution.CLRTable.Controls.Add(myLabel)
+            myLabel.Anchor = AnchorStyles.Bottom
+            myLabel.Anchor = AnchorStyles.Top
+            myLabel.Anchor = AnchorStyles.Left
+            myLabel.Anchor = AnchorStyles.Right
+            rowIndex += 1
+        Next
+
+        For row As Integer = 1 To Solution.CLRTable.RowCount - 1
+            For column As Integer = 1 To Solution.CLRTable.ColumnCount - 1
+                Dim myLabel As New Label
+                myLabel.Text = CStr(dvValues(row - 1, column - 1))
+                myLabel.Visible = True
+                myLabel.TextAlign = ContentAlignment.MiddleCenter
+                Solution.CLRTable.SetRow(myLabel, row)
+                Solution.CLRTable.SetColumn(myLabel, column)
+                Solution.CLRTable.Dock = DockStyle.Fill
+                Solution.CLRTable.Controls.Add(myLabel)
+                myLabel.Anchor = AnchorStyles.Bottom
+                myLabel.Anchor = AnchorStyles.Top
+                myLabel.Anchor = AnchorStyles.Left
+                myLabel.Anchor = AnchorStyles.Right
+            Next
+        Next
+
+        Solution.Show()
+
     End Sub
+
+
+
+End Class
+
+
+
+End Sub
 
 End Class
