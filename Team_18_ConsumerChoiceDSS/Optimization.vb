@@ -29,11 +29,11 @@ Public Class Optimization
         'Team18: Defines goal decision variables
         For Each myGoal As Goal In Goal.GoalList
             dvKey = "Dplus " & myGoal.Goal
-            Team18Solver.AddVariable(dvKey, dvIndex)
+            Team18Solver.addvariable(dvKey, dvIndex)
             Team18Solver.SetBounds(dvIndex, 0, Rational.PositiveInfinity)
 
             dvKey = "Dminus " & myGoal.Goal
-            Team18Solver.AddVariable(dvKey, dvIndex)
+            Team18Solver.addvariable(dvKey, dvIndex)
             Team18Solver.SetBounds(dvIndex, 0, Rational.PositiveInfinity)
         Next
         '----------------------------------------------------------------------------------------------------------
@@ -52,7 +52,7 @@ Public Class Optimization
         Team18Solver.AddRow(constraintKey, constraintIndex)
         Team18Solver.SetBounds(constraintIndex, 0, Rational.PositiveInfinity)
         For Each myGoal As Goal In Goal.GoalList
-            dvIndex = Team18Solver.GetIndexFromKey("Dplus " & myGoal.Goal)
+            dvIndex = Team18Solver.getIndexFromKey("Dplus " & myGoal.Goal)
             coefficient = 1
             Team18Solver.SetCoefficient(constraintIndex, dvIndex, coefficient)
         Next
@@ -68,9 +68,17 @@ Public Class Optimization
         Next
         '----------------------------------------------------------------------------------------------------------
         'Team 18: Objective Function
-        objKey = "Deviation"
+        objKey = "Total Deviation"
         Team18Solver.AddRow(objKey, objIndex)
         Team18Solver.AddGoal(objIndex, 1, True)
+        For Each dev As Deviation In Deviation.DeviationList
+            For Each myCar As Car In Car.CarList
+                dvIndex = Team18Solver.GetIndexFromKey(dev.Deviation & "_" mycar.Car)
+                Dim myActivityIndex As Integer = myCar.ActivityList.IndexOf(myCar)
+                coefficient = dev.Deviation(myActivityIndex)
+                Team18Solver.SetCoefficient(constraintIndex, dvIndex, coefficient)
+            Next
+        Next
     End Sub
     '**************************************************************************************************************************
     Public Sub RunModel()
@@ -110,8 +118,8 @@ Public Class Optimization
             For Each shift As Shift In shift.ShiftList
                 columnIndex = shift.ShiftList.IndexOf(shift)
                 dvKey = emp.EmployeeName & "_" & shift.ShiftName
-                dvIndex = HW5CLRModel.GetIndexFromKey(dvKey)
-                dvValues(rowIndex, columnIndex) = CSng(HW5CLRModel.GetValue(dvIndex).ToDouble)
+                dvIndex = Team18Solver.GetIndexFromKey(dvKey)
+                dvValues(rowIndex, columnIndex) = CSng(Team18Solver.GetValue(dvIndex).ToDouble)
             Next
         Next
         '************************************************************************************
@@ -135,7 +143,7 @@ Public Class Optimization
         '
         'CLR We enter the row headings into the table
         rowIndex = 0
-        For Each emp As Employee In Employee.EmployeeList
+        For Each x As Car In Car.CarList
             Dim myLabel As New Label
             myLabel.Text = emp.EmployeeName
             myLabel.Visible = True
@@ -172,5 +180,9 @@ Public Class Optimization
 
     End Sub
 
+
+
 End Class
+
+
 
