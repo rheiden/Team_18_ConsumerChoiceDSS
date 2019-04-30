@@ -110,8 +110,8 @@ Public Class Optimization
             For Each shift As Shift In shift.ShiftList
                 columnIndex = shift.ShiftList.IndexOf(shift)
                 dvKey = emp.EmployeeName & "_" & shift.ShiftName
-                dvIndex = HW5CLRModel.GetIndexFromKey(dvKey)
-                dvValues(rowIndex, columnIndex) = CSng(HW5CLRModel.GetValue(dvIndex).ToDouble)
+                dvIndex = Team18Solver.GetIndexFromKey(dvKey)
+                dvValues(rowIndex, columnIndex) = CSng(Team18Solver.GetValue(dvIndex).ToDouble)
             Next
         Next
         '************************************************************************************
@@ -135,7 +135,7 @@ Public Class Optimization
         '
         'CLR We enter the row headings into the table
         rowIndex = 0
-        For Each emp As Employee In Employee.EmployeeList
+        For Each x As Car In Car.CarList
             Dim myLabel As New Label
             myLabel.Text = emp.EmployeeName
             myLabel.Visible = True
