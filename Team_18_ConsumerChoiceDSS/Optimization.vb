@@ -66,6 +66,11 @@ Public Class Optimization
             coefficient = myCar.Cost
             Team18Solver.SetCoefficient(constraintIndex, dvIndex, coefficient)
         Next
+        '----------------------------------------------------------------------------------------------------------
+        'Team 18: Objective Function
+        objKey = "Total Effectiveness"
+        Team18Solver.AddRow(objKey, objIndex)
+        Team18Solver.AddGoal(objIndex, 1, True)
     End Sub
     '**************************************************************************************************************************
     Public Sub RunModel()
