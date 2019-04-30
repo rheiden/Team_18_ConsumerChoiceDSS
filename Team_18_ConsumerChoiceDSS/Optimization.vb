@@ -70,9 +70,36 @@ Public Class Optimization
     '**************************************************************************************************************************
     Public Sub RunModel()
 
+        'CLR runs the solver and displays the reselts
+        Dim mySolverParms As New SimplexSolverParams
+        mySolverParms.MixedIntegerGapTolerance = 1
+        mySolverParms.VariableFeasibilityTolerance = 0.00001
+        mySolverParms.MaxPivotCount = 1000
+        Team18Solver.Solve(mySolverParms)
+
+        If Team18Solver.Result = LinearResult.UnboundedPrimal Then
+            MessageBox.Show("Solution is unbounded")
+            Exit Sub
+        ElseIf _
+        Team18Solver.Result = LinearResult.InfeasiblePrimal Then
+            MessageBox.Show("Decision model is infeasible")
+            Exit Sub
+        Else
+            ShowAnswer()
+        End If
+
     End Sub
     '**************************************************************************************************************************
     Public Sub ShowAnswer()
+
+        frmRCHResults.rbxTeam18Make.Text =
+        frmRCHResults.rbxTeam18Model.Text =
+        frmRCHResults.rbxTeam18Cost.Text =
+        frmRCHResults.rtxTeam18BodyType.Text =
+        frmRCHResults.rtxTeam18Transmission.Text =
+        frmRCHResults.rtxTeam18Engine.Text =
+        frmRCHResults.rtxTeam18FuelEfficiency.Text =
+        frmRCHResults.rtxTeam18BodyType.Text = 
 
     End Sub
 
