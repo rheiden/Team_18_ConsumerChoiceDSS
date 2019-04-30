@@ -29,11 +29,11 @@ Public Class Optimization
         'Team18: Defines goal decision variables
         For Each myGoal As Goal In Goal.GoalList
             dvKey = "Dplus " & myGoal.Goal
-            Team18Solver.addvariable(dvKey, dvIndex)
+            Team18Solver.AddVariable(dvKey, dvIndex)
             Team18Solver.SetBounds(dvIndex, 0, Rational.PositiveInfinity)
 
             dvKey = "Dminus " & myGoal.Goal
-            Team18Solver.addvariable(dvKey, dvIndex)
+            Team18Solver.AddVariable(dvKey, dvIndex)
             Team18Solver.SetBounds(dvIndex, 0, Rational.PositiveInfinity)
         Next
         '----------------------------------------------------------------------------------------------------------
@@ -52,7 +52,7 @@ Public Class Optimization
         Team18Solver.AddRow(constraintKey, constraintIndex)
         Team18Solver.SetBounds(constraintIndex, 0, Rational.PositiveInfinity)
         For Each myGoal As Goal In Goal.GoalList
-            dvIndex = Team18Solver.getIndexFromKey("Dplus " & myGoal.Goal)
+            dvIndex = Team18Solver.GetIndexFromKey("Dplus " & myGoal.Goal)
             coefficient = 1
             Team18Solver.SetCoefficient(constraintIndex, dvIndex, coefficient)
         Next
@@ -172,12 +172,5 @@ Public Class Optimization
 
     End Sub
 
-
-
 End Class
 
-
-
-End Sub
-
-End Class
