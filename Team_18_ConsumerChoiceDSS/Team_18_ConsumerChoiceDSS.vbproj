@@ -47,6 +47,13 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Solver.Foundation, Version=3.0.2.10889, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.Solver.Foundation\v4.0_3.0.2.10889__31bf3856ad364e35\Microsoft.Solver.Foundation.dll</HintPath>
+    </Reference>
+    <Reference Include="MicrosoftSolverFoundationForExcel">
+      <HintPath>..\..\..\..\MSFforExcel\MicrosoftSolverFoundationForExcel.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -93,6 +100,11 @@
     <Compile Include="DeveloperForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="NewAccountForm.Designer.vb">
       <DependentUpon>NewAccountForm.vb</DependentUpon>
     </Compile>
@@ -104,6 +116,14 @@
     </Compile>
     <Compile Include="CarInfoForm.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewSP19_ProjectDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewSP19_ProjectDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NewSP19_ProjectDataSet.vb">
+      <DependentUpon>NewSP19_ProjectDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="SolverOutputForm.Designer.vb">
       <DependentUpon>SolverOutputForm.vb</DependentUpon>
@@ -134,11 +154,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="My Project\Settings.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="ObjectCreator.vb" />
     <Compile Include="Optimization.vb" />
@@ -176,18 +191,28 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
-    <None Include="My Project\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <CustomToolNamespace>My</CustomToolNamespace>
-      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
-    </None>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="NewSP19_ProjectDataSet.xsc">
+      <DependentUpon>NewSP19_ProjectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NewSP19_ProjectDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NewSP19_ProjectDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NewSP19_ProjectDataSet.xss">
+      <DependentUpon>NewSP19_ProjectDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Resources\kisspng-the-mp-car-group-car-dealership-vehicle-auto-detai-car-logo-5acc63ad412f59.047531031523344301267.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -195,9 +220,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Image1.png" />
+    <Content Include="NewSP19_Project.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <NativeReference Include="Microsoft Solver Foundation for Excel, Version=3.0.2.10889, Culture=neutral, PublicKeyToken=c3bce3770c238a49, ProcessorArchitecture=msil, Type=win32">
+      <Name>MicrosoftSolverFoundationForExcel.dll.manifest</Name>
+      <HintPath>..\..\..\..\MSFforExcel\MicrosoftSolverFoundationForExcel.dll.manifest</HintPath>
+    </NativeReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

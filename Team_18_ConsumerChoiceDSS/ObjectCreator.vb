@@ -13,13 +13,13 @@ Public Class ObjectCreator
 
         'Team18: Parameters for the RunSQL Method
         Dim mySQL As String                                                                                             'Team18: The SQL Query
-        Dim myConnectionString As String = ""                                                                           'Team18: the connection string to the data source
+        Dim myConnectionString As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\NewSP19_Project.mdb"                                                                           'Team18: the connection string to the data source
         Dim myDataSet As New DataSet                                                                                    'Team18: Creating a DataSet object 
         Dim tableName As String                                                                                         'Team18: the table object we are referring to
         Dim myDataBase As New DataBase                                                                                  'Team18: Creating a DataBase Object
 
         'Team18: Defining the variables we just created and running the Query
-        tableName = "CarData"                                              'Team18: name of the table we want to create
+        tableName = "CarData"                                                  'Team18: name of the table we want to create
         mySQL = "SELECT * FROM " & tableName                                    'Team18: Creating the SQL Query
         myDataBase.RunSQL(tableName, mySQL, myDataSet, myConnectionString)      'Team18: Running the SQL Query
 
@@ -27,43 +27,53 @@ Public Class ObjectCreator
         For rowNumber As Integer = 0 To myDataSet.Tables(tableName).Rows.Count - 1
             Dim myCar As New Car
             With myCar
-                .ID = myDataSet.Tables(tableName).Rows(rowNumber)("ID")                        'Team18: Setting the ID Property
-                .Name = myDataSet.Tables(tableName).Rows(rowNumber)("Name")                    'Team18: Setting the Name Property
-                .Acceleration = myDataSet.Tables(tableName).Rows(rowNumber)("Acceleration")    'Team18: Setting the Acceleration Property                          
+                .ID = myDataSet.Tables(tableName).Rows(rowNumber)("ID")                         'Team18: Setting the ID Property
+                .Cost = myDataSet.Tables(tableName).Rows(rowNumber)("Cost")                     'Team18: Setting the Cost Property
+                .Transmission = myDataSet.Tables(tableName).Rows(rowNumber)("Transmission")     'Team18: Setting the Transmission Property                          
+                .Engine = myDataSet.Tables(tableName).Rows(rowNumber)("Engine Type")            'Team18: Setting the TableName Property
+                .Fuel = myDataSet.Tables(tableName).Rows(rowNumber)("Fuel Efficiency")          'Team18: Setting the TableName Property
+                .Body = myDataSet.Tables(tableName).Rows(rowNumber)("Body Type")                'Team18: Setting the TableName Property
+                .Condition = myDataSet.Tables(tableName).Rows(rowNumber)("New/Used")            'Team18: Setting the TableName Property
+                .Make = myDataSet.Tables(tableName).Rows(rowNumber)("Make")                     'Team18: Setting the TableName Property
+                .Model = myDataSet.Tables(tableName).Rows(rowNumber)("Model")                   'Team18: Setting the TableName Property
+                
+                
             End With
-            Acceleration.AccelerationList.Add(myAcceleration)                                  'Team18: Adds Acceleration object to AccelerationList
+            Car.CarList.Add(myCar)                                                              'Team18: Adds Acceleration object to AccelerationList
         Next
 
         'Team18: Defining the variables we just created and running the Query
-        tableName = "Braking"                                                   'Team18: name of the table we want to create
+        tableName = "Goal"                                                   'Team18: name of the table we want to create
         mySQL = "SELECT * FROM " & tableName                                    'Team18: Creating the SQL Query
         myDataBase.RunSQL(tableName, mySQL, myDataSet, myConnectionString)      'Team18: Running the SQL Query
 
         'Team18: Creating a Braking object and setting the properties
         For rowNumber As Integer = 0 To myDataSet.Tables(tableName).Rows.Count - 1
-            Dim myBraking As New Braking
-            With myBraking
+            Dim myGoal As New Goal
+            With myGoal
                 .ID = myDataSet.Tables(tableName).Rows(rowNumber)("ID")                        'Team18: Setting the ID Property
-                .Name = myDataSet.Tables(tableName).Rows(rowNumber)("Name")                    'Team18: Setting the Name Property
-                .Braking = myDataSet.Tables(tableName).Rows(rowNumber)("Braking")              'Team18: Setting the Braking Property                 
+                .Goal = myDataSet.Tables(tableName).Rows(rowNumber)("Goal")                    'Team18: Setting the Name Property
+                .Dplus = myDataSet.Tables(tableName).Rows(rowNumber)("Weight on Dplus")        'Team18: Setting the Braking Property   
+                .Dminus = myDataSet.Tables(tableName).Rows(rowNumber)("Weight on Dminus")      'Team18: Setting the TableName Property
+
             End With
-            Braking.BrakingList.Add(myBraking)                                                 'Team18: Adds Braking object to BrakingList
+            Goal.GoalList.Add(myGoal)                                                          'Team18: Adds Braking object to BrakingList
         Next
 
         'Team18: Defining the variables we just created and running the Query
-        tableName = "Handling"                                                      'Team18: name of the table we want to create
-        mySQL = "SELECT * FROM " & tableName                                        'Team18: Creating the SQL Query
-        myDataBase.RunSQL(tableName, mySQL, myDataSet, myConnectionString)          'Team18: Running the SQL Query
+        tableName = "Login"                                                                    'Team18: name of the table we want to create
+        mySQL = "SELECT * FROM " & tableName                                                   'Team18: Creating the SQL Query
+        myDataBase.RunSQL(tableName, mySQL, myDataSet, myConnectionString)                     'Team18: Running the SQL Query
 
         'Team18: Creating a Handling object and setting the properties
         For rowNumber As Integer = 0 To myDataSet.Tables(tableName).Rows.Count - 1
-            Dim myHandling As New Handling
-            With myHandling
+            Dim myLogin As New Login
+            With myLogin
                 .ID = myDataSet.Tables(tableName).Rows(rowNumber)("ID")                        'Team18: Setting the ID Property
-                .Name = myDataSet.Tables(tableName).Rows(rowNumber)("Name")                    'Team18: Setting the Name Property
-                .Handling = myDataSet.Tables(tableName).Rows(rowNumber)("Handling")            'Team18: Setting the Handling Property                   
+                .UserName = myDataSet.Tables(tableName).Rows(rowNumber)("UserName")            'Team18: Setting the Name Property
+                .Password = myDataSet.Tables(tableName).Rows(rowNumber)("Password")            'Team18: Setting the Handling Property                   
             End With
-            Handling.HandlingList.Add(myHandling)                                              'Team18: Adds Handling object to HandlingList
+            Login.LoginList.Add(myLogin)                                                      'Team18: Adds Handling object to HandlingList
         Next
 
 
