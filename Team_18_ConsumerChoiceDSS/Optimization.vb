@@ -68,9 +68,17 @@ Public Class Optimization
         Next
         '----------------------------------------------------------------------------------------------------------
         'Team 18: Objective Function
-        objKey = "Deviation"
+        objKey = "Total Deviation"
         Team18Solver.AddRow(objKey, objIndex)
         Team18Solver.AddGoal(objIndex, 1, True)
+        For Each dev As Deviation In Deviation.DeviationList
+            For Each myCar As Car In Car.CarList
+                dvIndex = Team18Solver.GetIndexFromKey(dev.Deviation & "_" car.myCar)
+                Dim myActivityIndex As Integer = myCar.ActivityList.IndexOf(myCar)
+                coefficient = dev.Deviation(myActivityIndex)
+                Team18Solver.SetCoefficient(constraintIndex, dvIndex, coefficient)
+            Next
+        Next
     End Sub
     '**************************************************************************************************************************
     Public Sub RunModel()
