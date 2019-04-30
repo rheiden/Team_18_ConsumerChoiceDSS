@@ -125,6 +125,12 @@
     <Compile Include="NewSP19_ProjectDataSet.vb">
       <DependentUpon>NewSP19_ProjectDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Solution.Designer.vb">
+      <DependentUpon>Solution.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Solution.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SolverOutputForm.Designer.vb">
       <DependentUpon>SolverOutputForm.vb</DependentUpon>
     </Compile>
@@ -173,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CarInfoForm.resx">
       <DependentUpon>CarInfoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solution.resx">
+      <DependentUpon>Solution.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SolverOutputForm.resx">
       <DependentUpon>SolverOutputForm.vb</DependentUpon>

@@ -29,11 +29,11 @@ Public Class Optimization
         'Team18: Defines goal decision variables
         For Each myGoal As Goal In Goal.GoalList
             dvKey = "Dplus " & myGoal.Goal
-            Team18Solver.addvariable(dvKey, dvIndex)
+            Team18Solver.AddVariable(dvKey, dvIndex)
             Team18Solver.SetBounds(dvIndex, 0, Rational.PositiveInfinity)
 
             dvKey = "Dminus " & myGoal.Goal
-            Team18Solver.addvariable(dvKey, dvIndex)
+            Team18Solver.AddVariable(dvKey, dvIndex)
             Team18Solver.SetBounds(dvIndex, 0, Rational.PositiveInfinity)
         Next
         '----------------------------------------------------------------------------------------------------------
@@ -52,7 +52,7 @@ Public Class Optimization
         Team18Solver.AddRow(constraintKey, constraintIndex)
         Team18Solver.SetBounds(constraintIndex, 0, Rational.PositiveInfinity)
         For Each myGoal As Goal In Goal.GoalList
-            dvIndex = Team18Solver.getIndexFromKey("Dplus " & myGoal.Goal)
+            dvIndex = Team18Solver.GetIndexFromKey("Dplus " & myGoal.Goal)
             coefficient = 1
             Team18Solver.SetCoefficient(constraintIndex, dvIndex, coefficient)
         Next
@@ -113,27 +113,27 @@ Public Class Optimization
         Dim columnIndex As Integer = 0
 
         '
-        For Each emp As Employee In Employee.EmployeeList
-            rowIndex = Employee.EmployeeList.IndexOf(emp)
-            For Each shift As Shift In shift.ShiftList
-                columnIndex = shift.ShiftList.IndexOf(shift)
-                dvKey = emp.EmployeeName & "_" & shift.ShiftName
+        For Each myCar As Car In Car.CarList
+            rowIndex = Car.CarList.IndexOf(myCar)
+            For Each myGoal As Goal In Goal.GoalList
+                columnIndex = Goal.GoalList.IndexOf(myGoal)
+                dvKey = myCar.Model & "_" & myGoal.Goal
                 dvIndex = Team18Solver.GetIndexFromKey(dvKey)
                 dvValues(rowIndex, columnIndex) = CSng(Team18Solver.GetValue(dvIndex).ToDouble)
             Next
         Next
         '************************************************************************************
-        Solution.CLRTable.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single
+        Solution.tblTeam18Output.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single
         '
         'CLR We enter the column headings into the table
-        For column As Integer = 1 To Solution.CLRTable.ColumnCount - 1
+        For column As Integer = 1 To Solution.tblTeam18Output.ColumnCount - 1
             Dim myLabel As New Label
-            myLabel.Text = "Activity " & CStr(column)
-            Solution.CLRTable.Controls.Add(myLabel)
+            myLabel.Text = "Goal " & CStr(column)
+            Solution.tblTeam18Output.Controls.Add(myLabel)
             myLabel.Visible = True
             myLabel.TextAlign = ContentAlignment.MiddleCenter
-            Solution.CLRTable.SetRow(myLabel, 0)
-            Solution.CLRTable.SetColumn(myLabel, column)
+            Solution.tblTeam18Output.SetRow(myLabel, 0)
+            Solution.tblTeam18Output.SetColumn(myLabel, column)
             myLabel.Anchor = AnchorStyles.Bottom
             myLabel.Anchor = AnchorStyles.Top
             myLabel.Anchor = AnchorStyles.Left
@@ -143,15 +143,15 @@ Public Class Optimization
         '
         'CLR We enter the row headings into the table
         rowIndex = 0
-        For Each x As Car In Car.CarList
+        For Each myCar As Car In Car.CarList
             Dim myLabel As New Label
-            myLabel.Text = emp.EmployeeName
+            myLabel.Text = myCar.Model
             myLabel.Visible = True
             myLabel.TextAlign = ContentAlignment.MiddleCenter
-            Solution.CLRTable.SetRow(myLabel, rowIndex + 1)
-            Solution.CLRTable.SetColumn(myLabel, 0)
-            Solution.CLRTable.Dock = DockStyle.Fill
-            Solution.CLRTable.Controls.Add(myLabel)
+            Solution.tblTeam18Output.SetRow(myLabel, rowIndex + 1)
+            Solution.tblTeam18Output.SetColumn(myLabel, 0)
+            Solution.tblTeam18Output.Dock = DockStyle.Fill
+            Solution.tblTeam18Output.Controls.Add(myLabel)
             myLabel.Anchor = AnchorStyles.Bottom
             myLabel.Anchor = AnchorStyles.Top
             myLabel.Anchor = AnchorStyles.Left
@@ -159,16 +159,16 @@ Public Class Optimization
             rowIndex += 1
         Next
 
-        For row As Integer = 1 To Solution.CLRTable.RowCount - 1
-            For column As Integer = 1 To Solution.CLRTable.ColumnCount - 1
+        For row As Integer = 1 To Solution.tblTeam18Output.RowCount - 1
+            For column As Integer = 1 To Solution.tblTeam18Output.ColumnCount - 1
                 Dim myLabel As New Label
                 myLabel.Text = CStr(dvValues(row - 1, column - 1))
                 myLabel.Visible = True
                 myLabel.TextAlign = ContentAlignment.MiddleCenter
-                Solution.CLRTable.SetRow(myLabel, row)
-                Solution.CLRTable.SetColumn(myLabel, column)
-                Solution.CLRTable.Dock = DockStyle.Fill
-                Solution.CLRTable.Controls.Add(myLabel)
+                Solution.tblTeam18Output.SetRow(myLabel, row)
+                Solution.tblTeam18Output.SetColumn(myLabel, column)
+                Solution.tblTeam18Output.Dock = DockStyle.Fill
+                Solution.tblTeam18Output.Controls.Add(myLabel)
                 myLabel.Anchor = AnchorStyles.Bottom
                 myLabel.Anchor = AnchorStyles.Top
                 myLabel.Anchor = AnchorStyles.Left
