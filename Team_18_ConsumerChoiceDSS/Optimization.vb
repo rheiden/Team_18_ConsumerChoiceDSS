@@ -68,7 +68,7 @@ Public Class Optimization
         Next
         '----------------------------------------------------------------------------------------------------------
         'Team 18: Objective Function
-        objKey = "Total Effectiveness"
+        objKey = "Deviation"
         Team18Solver.AddRow(objKey, objIndex)
         Team18Solver.AddGoal(objIndex, 1, True)
     End Sub
