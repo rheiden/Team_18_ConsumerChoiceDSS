@@ -81,7 +81,6 @@
   <ItemGroup>
     <Compile Include="Car.vb" />
     <Compile Include="DataBase.vb" />
-    <Compile Include="Deviation.vb" />
     <Compile Include="LoginForm.vb">
       <SubType>Form</SubType>
     </Compile>

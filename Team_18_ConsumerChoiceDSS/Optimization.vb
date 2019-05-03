@@ -69,17 +69,31 @@ Public Class Optimization
         Next
         '----------------------------------------------------------------------------------------------------------
         'Team 18: Objective Function
-        objKey = "Total Deviation"                                              'Team18: sets the name of the objective function
-        Team18Solver.AddRow(objKey, objIndex)                                   'Team18: adds the row to solver
-        Team18Solver.AddGoal(objIndex, 1, True)                                 'Team18: adds the goal to solver
-        For Each dev As Deviation In Deviation.DeviationList
-            For Each myCar As Car In Car.CarList
-                dvIndex = Team18Solver.GetIndexFromKey(dev.Department & "_" & myCar.Model)
-                Dim myActivityIndex As Integer = Car.CarList.IndexOf(myCar)
-                coefficient = dev.Deviation(myActivityIndex)
-                Team18Solver.SetCoefficient(constraintIndex, dvIndex, coefficient)
-            Next
+        'IN CLASS: Consumer Choice Objective Function
+        objKey = "Weighted Deviation"
+        Team18Solver.AddRow(objKey, objIndex)
+        Team18Solver.AddGoal(objIndex, 1, True)
+        For Each myGoal As Goal In Goal.GoalList
+            dvIndex = Team18Solver.GetIndexFromKey("Dplus " & myGoal.Goal)
+            coefficient = -1 * myGoal.Dplus
+            Team18Solver.SetCoefficient(objIndex, dvIndex, coefficient)
+
+            dvIndex = Team18Solver.GetIndexFromKey("Dminus " & myGoal.Goal)
+            coefficient = 1 * myGoal.Dminus
+            Team18Solver.SetCoefficient(objIndex, dvIndex, coefficient)
         Next
+
+        'objKey = "Total Deviation"                                              'Team18: sets the name of the objective function
+        'Team18Solver.AddRow(objKey, objIndex)                                   'Team18: adds the row to solver
+        'Team18Solver.AddGoal(objIndex, 1, True)                                 'Team18: adds the goal to solver
+        'For Each dev As Deviation In Deviation.DeviationList
+        '    For Each myCar As Car In Car.CarList
+        '        dvIndex = Team18Solver.GetIndexFromKey(dev.Department & "_" & myCar.Model)
+        '        Dim myActivityIndex As Integer = Car.CarList.IndexOf(myCar)
+        '        coefficient = dev.Deviation(myActivityIndex)
+        '        Team18Solver.SetCoefficient(constraintIndex, dvIndex, coefficient)
+        '    Next
+        'Next
     End Sub
     '**************************************************************************************************************************
     Public Sub RunModel()
