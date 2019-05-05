@@ -97,6 +97,16 @@
     <Compile Include="DeveloperForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="My Project\Resource1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -114,14 +124,6 @@
     </Compile>
     <Compile Include="CarInfoForm_3.vb">
       <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NewSP19_ProjectDataSet.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NewSP19_ProjectDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="NewSP19_ProjectDataSet.vb">
-      <DependentUpon>NewSP19_ProjectDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Solution.Designer.vb">
       <DependentUpon>Solution.vb</DependentUpon>
@@ -154,11 +156,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="ObjectCreator.vb" />
     <Compile Include="Optimization.vb" />
   </ItemGroup>
@@ -178,6 +175,16 @@
     <EmbeddedResource Include="CarInfoForm_3.resx">
       <DependentUpon>CarInfoForm_3.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resource1.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="obj\Debug\Team_18_ConsumerChoiceDSS.Form2.resources" />
     <EmbeddedResource Include="obj\Debug\Team_18_ConsumerChoiceDSS.Form4.resources" />
     <EmbeddedResource Include="obj\Debug\Team_18_ConsumerChoiceDSS.frmRCHCarInfo.resources" />
@@ -194,12 +201,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CreateAccountHelpForm.resx">
       <DependentUpon>CreateAccountHelpForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="My Project\Resources.resx">
-      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
-      <CustomToolNamespace>My.Resources</CustomToolNamespace>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -222,26 +223,12 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="NewSP19_ProjectDataSet.xsc">
-      <DependentUpon>NewSP19_ProjectDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="NewSP19_ProjectDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>NewSP19_ProjectDataSet.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="NewSP19_ProjectDataSet.xss">
-      <DependentUpon>NewSP19_ProjectDataSet.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\Team_18_ConsumerChoiceDSS.exe" />
     <Content Include="bin\Debug\Team_18_ConsumerChoiceDSS.pdb" />
     <Content Include="bin\Debug\Team_18_ConsumerChoiceDSS.xml" />
     <Content Include="Image1.png" />
-    <Content Include="NewSP19_Project.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="obj\Debug\Team_18_ConsumerChoiceDSS.exe" />
     <Content Include="obj\Debug\Team_18_ConsumerChoiceDSS.pdb" />
     <Content Include="obj\Debug\Team_18_ConsumerChoiceDSS.vbproj.FileListAbsolute.txt" />
