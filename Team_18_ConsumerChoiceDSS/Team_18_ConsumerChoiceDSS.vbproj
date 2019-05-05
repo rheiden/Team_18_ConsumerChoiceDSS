@@ -51,9 +51,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.Solver.Foundation\v4.0_3.0.2.10889__31bf3856ad364e35\Microsoft.Solver.Foundation.dll</HintPath>
     </Reference>
-    <Reference Include="MicrosoftSolverFoundationForExcel">
-      <HintPath>..\..\..\..\MSFforExcel\MicrosoftSolverFoundationForExcel.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -81,11 +78,11 @@
   <ItemGroup>
     <Compile Include="Car.vb" />
     <Compile Include="DataBase.vb" />
-    <Compile Include="LoginForm.vb">
+    <Compile Include="LoginForm_1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.vb">
-      <DependentUpon>LoginForm.vb</DependentUpon>
+    <Compile Include="LoginForm_1.Designer.vb">
+      <DependentUpon>LoginForm_1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CarInfoHelpForm.Designer.vb">
@@ -106,16 +103,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="myCar.vb" />
-    <Compile Include="NewAccountForm.Designer.vb">
-      <DependentUpon>NewAccountForm.vb</DependentUpon>
+    <Compile Include="CreateAccountForm_2.Designer.vb">
+      <DependentUpon>CreateAccountForm_2.vb</DependentUpon>
     </Compile>
-    <Compile Include="NewAccountForm.vb">
+    <Compile Include="CreateAccountForm_2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CarInfoForm.Designer.vb">
-      <DependentUpon>CarInfoForm.vb</DependentUpon>
+    <Compile Include="CarInfoForm_3.Designer.vb">
+      <DependentUpon>CarInfoForm_3.vb</DependentUpon>
     </Compile>
-    <Compile Include="CarInfoForm.vb">
+    <Compile Include="CarInfoForm_3.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NewSP19_ProjectDataSet.Designer.vb">
@@ -132,10 +129,10 @@
     <Compile Include="Solution.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SolverOutputForm.Designer.vb">
-      <DependentUpon>SolverOutputForm.vb</DependentUpon>
+    <Compile Include="SolverOutputForm_4.Designer.vb">
+      <DependentUpon>SolverOutputForm_4.vb</DependentUpon>
     </Compile>
-    <Compile Include="SolverOutputForm.vb">
+    <Compile Include="SolverOutputForm_4.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginHelpForm.Designer.vb">
@@ -166,8 +163,8 @@
     <Compile Include="Optimization.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="LoginForm.resx">
-      <DependentUpon>LoginForm.vb</DependentUpon>
+    <EmbeddedResource Include="LoginForm_1.resx">
+      <DependentUpon>LoginForm_1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CarInfoHelpForm.resx">
       <DependentUpon>CarInfoHelpForm.vb</DependentUpon>
@@ -175,17 +172,17 @@
     <EmbeddedResource Include="DeveloperForm.resx">
       <DependentUpon>DeveloperForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewAccountForm.resx">
-      <DependentUpon>NewAccountForm.vb</DependentUpon>
+    <EmbeddedResource Include="CreateAccountForm_2.resx">
+      <DependentUpon>CreateAccountForm_2.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CarInfoForm.resx">
-      <DependentUpon>CarInfoForm.vb</DependentUpon>
+    <EmbeddedResource Include="CarInfoForm_3.resx">
+      <DependentUpon>CarInfoForm_3.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Solution.resx">
       <DependentUpon>Solution.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SolverOutputForm.resx">
-      <DependentUpon>SolverOutputForm.vb</DependentUpon>
+    <EmbeddedResource Include="SolverOutputForm_4.resx">
+      <DependentUpon>SolverOutputForm_4.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginHelpForm.resx">
       <DependentUpon>LoginHelpForm.vb</DependentUpon>
@@ -223,10 +220,6 @@
     <None Include="NewSP19_ProjectDataSet.xss">
       <DependentUpon>NewSP19_ProjectDataSet.xsd</DependentUpon>
     </None>
-    <None Include="Resources\kisspng-the-mp-car-group-car-dealership-vehicle-auto-detai-car-logo-5acc63ad412f59.047531031523344301267.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\kisspng-the-mp-car-group-car-dealership-vehicle-auto-detai-car-logo-5acc63ad77f7c6.9011992615233443014914.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Image1.png" />
@@ -238,10 +231,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <NativeReference Include="Microsoft Solver Foundation for Excel, Version=3.0.2.10889, Culture=neutral, PublicKeyToken=c3bce3770c238a49, ProcessorArchitecture=msil, Type=win32">
-      <Name>MicrosoftSolverFoundationForExcel.dll.manifest</Name>
-      <HintPath>..\..\..\..\MSFforExcel\MicrosoftSolverFoundationForExcel.dll.manifest</HintPath>
-    </NativeReference>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
