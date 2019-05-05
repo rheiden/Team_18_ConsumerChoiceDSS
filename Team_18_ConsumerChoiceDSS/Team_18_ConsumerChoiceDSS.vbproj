@@ -178,6 +178,11 @@
     <EmbeddedResource Include="CarInfoForm_3.resx">
       <DependentUpon>CarInfoForm_3.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\Team_18_ConsumerChoiceDSS.Form2.resources" />
+    <EmbeddedResource Include="obj\Debug\Team_18_ConsumerChoiceDSS.Form4.resources" />
+    <EmbeddedResource Include="obj\Debug\Team_18_ConsumerChoiceDSS.frmRCHCarInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\Team_18_ConsumerChoiceDSS.frmRCHWelcome.resources" />
+    <EmbeddedResource Include="obj\Debug\Team_18_ConsumerChoiceDSS.Resources.resources" />
     <EmbeddedResource Include="Solution.resx">
       <DependentUpon>Solution.vb</DependentUpon>
     </EmbeddedResource>
@@ -199,10 +204,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="bin\Debug\Team_18_ConsumerChoiceDSS.exe.config" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\Team_18_ConsumerChoiceDSS.vbproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\Team_18_ConsumerChoiceDSS.vbproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\Team_18_ConsumerChoiceDSS.vbprojAssemblyReference.cache" />
+    <None Include="obj\Debug\Team_18_ConsumerChoiceDSS.vbprojResolveAssemblyReference.cache" />
+    <None Include="obj\Release\Team_18_ConsumerChoiceDSS.vbproj.CoreCompileInputs.cache" />
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\Settings.settings">
@@ -222,16 +235,24 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\Team_18_ConsumerChoiceDSS.exe" />
+    <Content Include="bin\Debug\Team_18_ConsumerChoiceDSS.pdb" />
+    <Content Include="bin\Debug\Team_18_ConsumerChoiceDSS.xml" />
     <Content Include="Image1.png" />
     <Content Include="NewSP19_Project.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="obj\Debug\Team_18_ConsumerChoiceDSS.exe" />
+    <Content Include="obj\Debug\Team_18_ConsumerChoiceDSS.pdb" />
+    <Content Include="obj\Debug\Team_18_ConsumerChoiceDSS.vbproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Team_18_ConsumerChoiceDSS.xml" />
+    <Content Include="obj\Debug\TempPE\NewSP19_ProjectDataSet.Designer.vb.dll" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
